@@ -11,7 +11,7 @@ import MySQLdb
 # 将item保存到mysql
 class CloPipeline(object):
     def __init__(self):
-        self.conn = MySQLdb.connect(user='root', passwd='abcd1234', host='127.0.0.1', port=3306, db='webapp', use_unicode=True, charset='utf8')
+        self.conn = MySQLdb.connect(user='root', passwd='abcd1234', host='localhost', port=3306, db='webapp', use_unicode=True, charset='utf8')
         self.cursor = self.conn.cursor()
 
     def process_item(self, item, spider):
