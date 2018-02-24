@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Scrapy settings for lottery project
+# Scrapy settings for slottery project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -9,14 +9,14 @@
 #     http://scrapy.readthedocs.org/en/latest/topics/downloader-middleware.html
 #     http://scrapy.readthedocs.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'lottery'
+BOT_NAME = 'slottery'
 
-SPIDER_MODULES = ['lottery.spiders']
-NEWSPIDER_MODULE = 'lottery.spiders'
+SPIDER_MODULES = ['slottery.spiders']
+NEWSPIDER_MODULE = 'slottery.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'lottery (+http://www.yourdomain.com)'
+#USER_AGENT = 'slottery (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
 # ROBOTSTXT_OBEY = True
@@ -48,13 +48,13 @@ ROBOTSTXT_OBEY = False
 # Enable or disable spider middlewares
 # See http://scrapy.readthedocs.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    'lottery.middlewares.LotterySpiderMiddleware': 543,
+#    'slottery.middlewares.SlotterySpiderMiddleware': 543,
 #}
 
 # Enable or disable downloader middlewares
 # See http://scrapy.readthedocs.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    'lottery.middlewares.MyCustomDownloaderMiddleware': 543,
+#    'slottery.middlewares.MyCustomDownloaderMiddleware': 543,
 #}
 
 # Enable or disable extensions
@@ -66,8 +66,8 @@ ROBOTSTXT_OBEY = False
 # Configure item pipelines
 # See http://scrapy.readthedocs.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-   'lottery.pipelines.LotteryPipeline': 300,
-   'lottery.pipelines.LotteryPipelineJson': 400,
+   'slottery.pipelines.SlotteryPipeline': 300,
+   'slottery.pipelines.SlotteryPipelineJson': 400,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)

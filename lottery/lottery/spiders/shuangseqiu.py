@@ -14,7 +14,8 @@ sys.setdefaultencoding('utf-8')
 class ShuangseqiuSpider(scrapy.Spider):
     name = 'shuangseqiu'
     allowed_domains = ['datachart.500.com']
-    start_urls = ['http://datachart.500.com/ssq/history/newinc/history.php?start=03001&end=18020']
+    # start_urls = ['http://datachart.500.com/ssq/history/newinc/history.php?start=03001&end=18020']
+    start_urls = ['http://datachart.500.com/ssq/history/newinc/history.php?start=00001&end=99999']
 
     def parse(self, response):
         node_list = response.xpath("//tr[@class='t_tr1']")
@@ -48,12 +49,12 @@ class ShuangseqiuSpider(scrapy.Spider):
             item['red_6'] = red_6[0].encode('utf-8')
             item['blue_1'] = blue_1[0].encode('utf-8')
             item['happy_sunday'] = happy_sunday[0].encode('utf-8')
-            item['prize_pool_bonus'] = prize_pool_bonus[0].encode('utf-8')
+            item['prize_pool_bonus'] = prize_pool_bonus[0].replace(',', '').encode('utf-8')
             item['first_prize_count'] = first_prize_count[0].encode('utf-8')
-            item['first_prize_bonus'] = first_prize_bonus[0].encode('utf-8')
+            item['first_prize_bonus'] = first_prize_bonus[0].replace(',', '').encode('utf-8')
             item['second_prize_count'] = second_prize_count[0].encode('utf-8')
-            item['second_prize_bonus'] = second_prize_bonus[0].encode('utf-8')
-            item['total_betting_amount'] = total_betting_amount[0].encode('utf-8')
+            item['second_prize_bonus'] = second_prize_bonus[0].replace(',', '').encode('utf-8')
+            item['total_betting_amount'] = total_betting_amount[0].replace(',', '').encode('utf-8')
             item['lottery_date'] = lottery_date[0].encode('utf-8')
             items.append(item)
 

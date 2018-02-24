@@ -8,20 +8,20 @@
 import json
 import MySQLdb
 
+
 # 将items返回到cmd终端
-# class LotteryPipeline(object):
+# class SlotteryPipeline(object):
 #     def process_item(self, item, spider):
 #         return item
 
-
 # 将item保存到mysql
-class LotteryPipeline(object):
+class SlotteryPipeline(object):
     def __init__(self):
         self.conn = MySQLdb.connect(user='root', passwd='abcd1234', host='127.0.0.1', port=3306, db='webapp', use_unicode=True, charset='utf8')
         self.cursor = self.conn.cursor()
 
     def process_item(self, item, spider):
-        sql = 'insert into shuangseqiu_history(lottery_number, red_1, red_2, red_3, red_4, red_5, red_6, blue_1, happy_sunday, prize_pool_bonus, first_prize_count, first_prize_bonus, second_prize_count, second_prize_bonus, total_betting_amount, lottery_date) values ("%s", "%s", "%s", "%s", "%s", "%s", "%s", "%s", "%s", "%s", "%s", "%s", "%s", "%s", "%s", "%s")' % (dict(item)['lottery_number'], dict(item)['red_1'], dict(item)['red_2'], dict(item)['red_3'], dict(item)['red_4'], dict(item)['red_5'], dict(item)['red_6'], dict(item)['blue_1'], dict(item)['happy_sunday'], dict(item)['prize_pool_bonus'], dict(item)['first_prize_count'], dict(item)['first_prize_bonus'], dict(item)['second_prize_count'], dict(item)['second_prize_bonus'], dict(item)['total_betting_amount'], dict(item)['lottery_date'])
+        sql = 'insert into daletou_history(lottery_number, front_1, front_2, front_3, front_4, front_5, back_1, back_2, prize_pool_bonus, first_prize_count, first_prize_bonus, second_prize_count, second_prize_bonus, total_betting_amount, lottery_date) values ("%s", "%s", "%s", "%s", "%s", "%s", "%s", "%s", "%s", "%s", "%s", "%s", "%s", "%s", "%s")' % (dict(item)['lottery_number'], dict(item)['front_1'], dict(item)['front_2'], dict(item)['front_3'], dict(item)['front_4'], dict(item)['front_5'], dict(item)['back_1'], dict(item)['back_2'], dict(item)['prize_pool_bonus'], dict(item)['first_prize_count'], dict(item)['first_prize_bonus'], dict(item)['second_prize_count'], dict(item)['second_prize_bonus'], dict(item)['total_betting_amount'], dict(item)['lottery_date'])
         try:
             self.cursor.execute(sql)
             self.conn.autocommit('on')
@@ -33,9 +33,9 @@ class LotteryPipeline(object):
         self.conn.close()
 
 # 将item保存为json文件
-class LotteryPipelineJson(object):
+class SlotteryPipelineJson(object):
     def __init__(self):
-        self.f = open('shuangseqiu.json', 'wb')
+        self.f = open('daletou.json', 'wb')
 
     def process_item(self, item, spider):
         content = json.dumps(dict(item), ensure_ascii=False) + ',\n'
@@ -45,6 +45,3 @@ class LotteryPipelineJson(object):
 
     def close_spider(self, spider):
         pass
-
-
-
