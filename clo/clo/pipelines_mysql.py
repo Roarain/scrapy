@@ -7,9 +7,8 @@
 import json
 import MySQLdb
 from mysqlpool import MysqlPool
-import pymongo
 
-'''
+
 # 将item保存到mysql
 class CloPipeline(object):
     def __init__(self):
@@ -25,8 +24,8 @@ class CloPipeline(object):
 
     def close_spider(self, spider):
         self.mp._cursor.close()
-'''
-'''
+
+
 # 将item保存为json文件
 class CloPipelineJson(object):
     def __init__(self):
@@ -39,19 +38,3 @@ class CloPipelineJson(object):
 
     def close_spider(self, spider):
         self.f.close()
-'''
-
-# 将item保存到mongoDB
-class CloPipeline(object):
-    def __init__(self):
-        self.client = pymongo.MongoClient(host='127.0.0.1', port=27017)
-        self.db = self.client['zfzx']
-        self.collection = self.db['sale_statistics']
-
-    def process_item(self, item, spider):
-        post_item = dict(item)
-        self.collection.insert(post_item)
-        return len(item)
-
-    def close_spider(self, spider):
-        pass

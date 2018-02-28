@@ -69,7 +69,7 @@ COOKIES_ENABLED = True
 # See http://scrapy.readthedocs.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
    'clo.pipelines.CloPipeline': 300,
-   'clo.pipelines.CloPipelineJson': 400,
+   # 'clo.pipelines.CloPipelineJson': 400,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)

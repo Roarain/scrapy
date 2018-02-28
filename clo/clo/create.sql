@@ -15,8 +15,10 @@ create table if not exists sales_statistics (
   game_qwgef decimal(15,2) comment '趣味高尔夫',
   daily_turnover decimal(16,2) comment '当天总营业额',
   date_time date not null comment '当天日期',
-  primary key (hall_name, game_lhdb, date_time)
+  primary key (hall_name, date_time)
   );
+
+alter table sales_statistics add index index_date_time_sales_statistics (date_time);
 
 select * from sales_statistics;
 truncate sales_statistics;
