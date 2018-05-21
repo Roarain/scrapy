@@ -131,5 +131,11 @@ hall_infos = (
 )
 '''
 
+hall_infos = (
+    ('6', '411', '411011'),
+    ('6', '413', '413005'),
+    ('6', '419', '419003'),
+)
+
 
 print 'len(hall_infos): ', len(hall_infos)

@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Scrapy settings for opm project
+# Scrapy settings for opmhallid project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -9,20 +9,20 @@
 #     http://scrapy.readthedocs.org/en/latest/topics/downloader-middleware.html
 #     http://scrapy.readthedocs.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'opm'
+BOT_NAME = 'opmhallid'
 
-SPIDER_MODULES = ['opm.spiders']
-NEWSPIDER_MODULE = 'opm.spiders'
+SPIDER_MODULES = ['opmhallid.spiders']
+NEWSPIDER_MODULE = 'opmhallid.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'opm (+http://www.yourdomain.com)'
+#USER_AGENT = 'opmhallid (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = False
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
-CONCURRENT_REQUESTS = 16
+#CONCURRENT_REQUESTS = 32
 
 # Configure a delay for requests for the same website (default: 0)
 # See http://scrapy.readthedocs.org/en/latest/topics/settings.html#download-delay
@@ -35,7 +35,6 @@ DOWNLOAD_TIMEOUT = 1200
 
 # Disable cookies (enabled by default)
 #COOKIES_ENABLED = False
-
 COOKIES_ENABLED = True
 COOKIES_DEBUG = True
 
@@ -47,7 +46,6 @@ COOKIES_DEBUG = True
 #   'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
 #   'Accept-Language': 'en',
 #}
-
 DEFAULT_REQUEST_HEADERS = {
     'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
     'Accept-Encoding': 'gzip, deflate',
@@ -57,13 +55,13 @@ DEFAULT_REQUEST_HEADERS = {
 # Enable or disable spider middlewares
 # See http://scrapy.readthedocs.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    'opm.middlewares.OpmSpiderMiddleware': 543,
+#    'opmhallid.middlewares.OpmhallidSpiderMiddleware': 543,
 #}
 
 # Enable or disable downloader middlewares
 # See http://scrapy.readthedocs.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    'opm.middlewares.MyCustomDownloaderMiddleware': 543,
+#    'opmhallid.middlewares.MyCustomDownloaderMiddleware': 543,
 #}
 
 # Enable or disable extensions
@@ -75,8 +73,7 @@ DEFAULT_REQUEST_HEADERS = {
 # Configure item pipelines
 # See http://scrapy.readthedocs.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-   'opm.pipelines.OpmPipeline': 300,
-   # 'opm.pipelines.OpmPipelineJson': 400,
+   'opmhallid.pipelines.OpmhallidPipeline': 300,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)

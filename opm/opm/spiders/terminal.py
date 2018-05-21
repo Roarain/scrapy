@@ -27,12 +27,12 @@ class TerminalSpider(scrapy.Spider):
         self.giveup = []
         self.hall_infos = copy.deepcopy(hall_infos)
         self.temp_hall_infos = copy.deepcopy(hall_infos)
-        self.parameter_name = ('proId', 'areaId', 'hallId')
+        self.parameter_id = ('proId', 'areaId', 'hallId')
         self.form_data_login = {
             'referer': 'index.php',
-            'login': 'xxx',
+            'login': 'jinf',
             'cookietime': '25920000',
-            'password': 'xxx',
+            'password': 'jinf',
             'submit': '马上登陆',
         }
 
@@ -49,7 +49,7 @@ class TerminalSpider(scrapy.Spider):
 
     def post_search_data(self, response):
         for hall_info in self.hall_infos:
-            post_data = dict(zip(self.parameter_name, hall_info))
+            post_data = dict(zip(self.parameter_id, hall_info))
             yield FormRequest(
                 url='http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action',
                 formdata=post_data,
@@ -60,17 +60,17 @@ class TerminalSpider(scrapy.Spider):
 
     def parse(self, response):
         node_list = response.xpath("//tr[@bgcolor='#FFFFFF']")
-        post_data = {k: v for k, v in response.meta.items() if k in self.parameter_name}
+        post_data = {k: v for k, v in response.meta.items() if k in self.parameter_id}
         post_data_hallId = post_data['hallId']
 
         if not node_list:
             logging.info('parse error post data: {}'.format(post_data))
             if post_data_hallId not in self.counter.keys():
                 self.counter[post_data_hallId] = 1
-            if self.counter[post_data_hallId] > 30:
+            if self.counter[post_data_hallId] >= 10:
                 logging.info('give up get data: {}'.format(post_data_hallId))
                 return
-            elif 0 < self.counter[post_data_hallId] < 30:
+            elif 0 < self.counter[post_data_hallId] < 10:
                 self.counter[post_data_hallId] += 1
                 logging.info('{} repeat times: {}'.format(post_data_hallId, self.counter[post_data_hallId]))
                 time.sleep(5)
@@ -126,14 +126,3 @@ class TerminalSpider(scrapy.Spider):
 
                 logging.info('item data: {}'.format(item))
                 yield item
-            '''
-            if self.temp_hall_infos:
-                hall_info = self.temp_hall_infos.pop()
-                post_data = dict(zip(self.parameter_name, hall_info))
-                yield FormRequest(
-                    url='http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action',
-                    formdata=post_data,
-                    callback=self.parse,
-                    meta=post_data,
-                )
-            '''

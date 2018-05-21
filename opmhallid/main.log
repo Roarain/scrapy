@@ -1,0 +1,1187 @@
+2018-05-21 17:07:07,288 - INFO - Scrapy 1.4.0 started (bot: opmhallid)
+2018-05-21 17:07:07,289 - INFO - Overridden settings: {'COOKIES_DEBUG': True, 'NEWSPIDER_MODULE': 'opmhallid.spiders', 'SPIDER_MODULES': ['opmhallid.spiders'], 'BOT_NAME': 'opmhallid', 'DOWNLOAD_TIMEOUT': 1200, 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36', 'AUTOTHROTTLE_ENABLED': True, 'DOWNLOAD_DELAY': 3, 'AUTOTHROTTLE_DEBUG': True}
+2018-05-21 17:07:07,779 - INFO - Enabled extensions:
+['scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.throttle.AutoThrottle']
+2018-05-21 17:07:08,726 - INFO - Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-05-21 17:07:08,832 - INFO - Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-05-21 17:07:09,785 - INFO - Enabled item pipelines:
+['opmhallid.pipelines.OpmhallidPipeline']
+2018-05-21 17:07:09,786 - INFO - Spider opened
+2018-05-21 17:07:09,881 - INFO - Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-05-21 17:07:09,884 - DEBUG - Telnet console listening on 127.0.0.1:6023
+2018-05-21 17:07:10,055 - INFO - slot: 114.242.119.194 | conc: 1 | delay: 5000 ms (+0) | latency:   17 ms | size:   228 bytes
+2018-05-21 17:07:10,055 - DEBUG - Received cookies from: <302 http://114.242.119.194:9714/test.html>
+Set-Cookie: ObSSOCookie=loggedoutcontinue; path=/;
+
+Set-Cookie: ObFormLoginCookie=wh%3D114.242.119.194%3A9714%20wu%3D%2Ftest.html%20wo%3D1%20rh%3Dhttp%3A%2F%2F114.242.119.194%3A9714%20ru%3D%252Ftest.html; path=/test.html;
+
+Set-Cookie: cookiesession1=3D6E3BA9PUMYBFJJNDDXWXIZ4JQCF423;Path=/;HttpOnly
+
+2018-05-21 17:07:10,055 - DEBUG - Redirecting (302) to <GET http://114.242.119.194:9714/login/login.html> from <GET http://114.242.119.194:9714/test.html>
+2018-05-21 17:07:10,056 - DEBUG - Sending cookies to: <GET http://114.242.119.194:9714/login/login.html>
+Cookie: ObSSOCookie=loggedoutcontinue; cookiesession1=3D6E3BA9PUMYBFJJNDDXWXIZ4JQCF423
+
+2018-05-21 17:07:14,905 - INFO - slot: 114.242.119.194 | conc: 1 | delay: 3000 ms (-2000) | latency:   10 ms | size:  5642 bytes
+2018-05-21 17:07:14,920 - DEBUG - Crawled (200) <GET http://114.242.119.194:9714/login/login.html> (referer: None)
+2018-05-21 17:07:15,025 - DEBUG - Sending cookies to: <POST http://114.242.119.194:9714/test.html>
+Cookie: ObFormLoginCookie=wh%3D114.242.119.194%3A9714%20wu%3D%2Ftest.html%20wo%3D1%20rh%3Dhttp%3A%2F%2F114.242.119.194%3A9714%20ru%3D%252Ftest.html; ObSSOCookie=loggedoutcontinue; cookiesession1=3D6E3BA9PUMYBFJJNDDXWXIZ4JQCF423
+
+2018-05-21 17:07:21,211 - INFO - slot: 114.242.119.194 | conc: 1 | delay: 3000 ms (+0) | latency:   85 ms | size:   234 bytes
+2018-05-21 17:07:21,211 - DEBUG - Received cookies from: <302 http://114.242.119.194:9714/test.html>
+Set-Cookie: ObSSOCookie=40vG%2BqIxaWmxTgStMZhmjFoGB07In4vn4KPJvt8OZ10U8e8NYjbeYlQADB2SY3KyOtF%2B7MnYeJpEfCBJsSk3VIlRjc4GTV5Qqm8nShzZiIUhtEV2PbuG7xHMifJw8y9RTIjB3GZ7QZmxyQaJ8ajl%2FEaKk6Itz%2BSmJ0gfubhQsSwu4699A2xYug%2FTi4mM0C1r7KW4oGWNbW9abBx60exY2B35Nf%2BJj1aTEl7iuZIoh2aTPybsx9vF9e%2FELEtntJnvDaf9tjE3ovuv%2BPfHAzkELMHeBOF0qqMS2oDl5Lz%2BIUc%3D; path=/;
+
+Set-Cookie: ObFormLoginCookie=done; path=/test.html;
+
+2018-05-21 17:07:21,213 - DEBUG - Redirecting (302) to <GET http://114.242.119.194:9714/test.html?info=welcome> from <POST http://114.242.119.194:9714/test.html>
+2018-05-21 17:07:21,213 - DEBUG - Sending cookies to: <GET http://114.242.119.194:9714/test.html?info=welcome>
+Cookie: ObFormLoginCookie=done; ObSSOCookie=40vG%2BqIxaWmxTgStMZhmjFoGB07In4vn4KPJvt8OZ10U8e8NYjbeYlQADB2SY3KyOtF%2B7MnYeJpEfCBJsSk3VIlRjc4GTV5Qqm8nShzZiIUhtEV2PbuG7xHMifJw8y9RTIjB3GZ7QZmxyQaJ8ajl%2FEaKk6Itz%2BSmJ0gfubhQsSwu4699A2xYug%2FTi4mM0C1r7KW4oGWNbW9abBx60exY2B35Nf%2BJj1aTEl7iuZIoh2aTPybsx9vF9e%2FELEtntJnvDaf9tjE3ovuv%2BPfHAzkELMHeBOF0qqMS2oDl5Lz%2BIUc%3D; cookiesession1=3D6E3BA9PUMYBFJJNDDXWXIZ4JQCF423
+
+2018-05-21 17:07:24,594 - INFO - slot: 114.242.119.194 | conc: 1 | delay: 3000 ms (+0) | latency:   14 ms | size:   423 bytes
+2018-05-21 17:07:24,594 - DEBUG - Received cookies from: <200 http://114.242.119.194:9714/test.html?info=welcome>
+Set-Cookie: ObSSOCookie=lCC%2BpM3UBpUugkFfasFURHCmFYL6KgMEIBoK4tyaAeC27iR91ihk8lspmr%2BoKqWCSsoXubrFvmgdIp1HpjErGW1J%2FnDQLDUTE7ZcTRxJb9ymRx5rZvziiUG%2B%2FCYh%2BXN9YBpUhbfiMPb59H05gu8wfApatalb2qxF5TDb0t%2B2hwTr2MNJklk2PqK2rdZQAmRgcW3N0xnW9%2BYwbJsDjg3KVgH5K%2B7HLhj1Ng9X%2BkROffpgCO%2BCWtYnyKRunlkpzImxEJ9vd1xDOPxCuCDzTTUchidPN7cHg%2Byyop3kLCRi2aY%3D; path=/;
+
+2018-05-21 17:07:24,609 - DEBUG - Redirecting (meta refresh) to <GET http://114.242.119.194:9714/infoplatform/login/login.action> from <GET http://114.242.119.194:9714/test.html?info=welcome>
+2018-05-21 17:07:24,611 - DEBUG - Sending cookies to: <GET http://114.242.119.194:9714/infoplatform/login/login.action>
+Cookie: ObSSOCookie=lCC%2BpM3UBpUugkFfasFURHCmFYL6KgMEIBoK4tyaAeC27iR91ihk8lspmr%2BoKqWCSsoXubrFvmgdIp1HpjErGW1J%2FnDQLDUTE7ZcTRxJb9ymRx5rZvziiUG%2B%2FCYh%2BXN9YBpUhbfiMPb59H05gu8wfApatalb2qxF5TDb0t%2B2hwTr2MNJklk2PqK2rdZQAmRgcW3N0xnW9%2BYwbJsDjg3KVgH5K%2B7HLhj1Ng9X%2BkROffpgCO%2BCWtYnyKRunlkpzImxEJ9vd1xDOPxCuCDzTTUchidPN7cHg%2Byyop3kLCRi2aY%3D; cookiesession1=3D6E3BA9PUMYBFJJNDDXWXIZ4JQCF423
+
+2018-05-21 17:07:27,591 - INFO - slot: 114.242.119.194 | conc: 1 | delay: 3000 ms (+0) | latency:   26 ms | size:     0 bytes
+2018-05-21 17:07:27,591 - DEBUG - Received cookies from: <302 http://114.242.119.194:9714/infoplatform/login/login.action>
+Set-Cookie: JSESSIONID=5C31786D4EAC3BC5E58DEF31DF70F4FD.node1; Path=/
+
+2018-05-21 17:07:27,591 - DEBUG - Redirecting (302) to <GET http://114.242.119.194:9714/infoplatform/main.jsp;jsessionid=5C31786D4EAC3BC5E58DEF31DF70F4FD.node1> from <GET http://114.242.119.194:9714/infoplatform/login/login.action>
+2018-05-21 17:07:27,592 - DEBUG - Sending cookies to: <GET http://114.242.119.194:9714/infoplatform/main.jsp;jsessionid=5C31786D4EAC3BC5E58DEF31DF70F4FD.node1>
+Cookie: JSESSIONID=5C31786D4EAC3BC5E58DEF31DF70F4FD.node1; ObSSOCookie=lCC%2BpM3UBpUugkFfasFURHCmFYL6KgMEIBoK4tyaAeC27iR91ihk8lspmr%2BoKqWCSsoXubrFvmgdIp1HpjErGW1J%2FnDQLDUTE7ZcTRxJb9ymRx5rZvziiUG%2B%2FCYh%2BXN9YBpUhbfiMPb59H05gu8wfApatalb2qxF5TDb0t%2B2hwTr2MNJklk2PqK2rdZQAmRgcW3N0xnW9%2BYwbJsDjg3KVgH5K%2B7HLhj1Ng9X%2BkROffpgCO%2BCWtYnyKRunlkpzImxEJ9vd1xDOPxCuCDzTTUchidPN7cHg%2Byyop3kLCRi2aY%3D; cookiesession1=3D6E3BA9PUMYBFJJNDDXWXIZ4JQCF423
+
+2018-05-21 17:07:31,882 - INFO - slot: 114.242.119.194 | conc: 1 | delay: 3000 ms (+0) | latency:   21 ms | size:  1157 bytes
+2018-05-21 17:07:31,884 - DEBUG - Received cookies from: <200 http://114.242.119.194:9714/infoplatform/main.jsp;jsessionid=5C31786D4EAC3BC5E58DEF31DF70F4FD.node1>
+Set-Cookie: ObSSOCookie=N%2FxehZNyR6LmDkP19P2p%2B0eOrvcjL63LPhC7gCLJCAVg1VMzRSHIJHdjvNnmo73CiVJ4hK5olsVu%2ByoO62Aepr9fgBx5ToG0hGk50Oixtrpdrd27c8b1BFSvRPnNT3YVVsOnjfLla5%2BG15PJhlIDEiCnnGFWdS3WfX6Ez%2FWLeq7yZowHtdZnbYqOSgx0%2Fu6BbrngwtSd7Y9XWIRKjAxZyzVjdfGM%2BaiM1IJkmEVEkA6JK1nLJlWZMiccSMotJBHmskvIfJyfvQjx04RhaS0ACw%3D%3D; path=/;
+
+Set-Cookie: JSESSIONID=5C31786D4EAC3BC5E58DEF31DF70F4FD.node1; Path=/
+
+2018-05-21 17:07:31,884 - DEBUG - Crawled (200) <GET http://114.242.119.194:9714/infoplatform/main.jsp;jsessionid=5C31786D4EAC3BC5E58DEF31DF70F4FD.node1> (referer: http://114.242.119.194:9714/login/login.html)
+2018-05-21 17:07:31,986 - DEBUG - Sending cookies to: <POST http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+Cookie: JSESSIONID=5C31786D4EAC3BC5E58DEF31DF70F4FD.node1; ObSSOCookie=N%2FxehZNyR6LmDkP19P2p%2B0eOrvcjL63LPhC7gCLJCAVg1VMzRSHIJHdjvNnmo73CiVJ4hK5olsVu%2ByoO62Aepr9fgBx5ToG0hGk50Oixtrpdrd27c8b1BFSvRPnNT3YVVsOnjfLla5%2BG15PJhlIDEiCnnGFWdS3WfX6Ez%2FWLeq7yZowHtdZnbYqOSgx0%2Fu6BbrngwtSd7Y9XWIRKjAxZyzVjdfGM%2BaiM1IJkmEVEkA6JK1nLJlWZMiccSMotJBHmskvIfJyfvQjx04RhaS0ACw%3D%3D; cookiesession1=3D6E3BA9PUMYBFJJNDDXWXIZ4JQCF423
+
+2018-05-21 17:07:35,831 - INFO - slot: 114.242.119.194 | conc: 1 | delay: 3000 ms (+0) | latency:  209 ms | size: 38398 bytes
+2018-05-21 17:07:35,832 - DEBUG - Crawled (200) <POST http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action> (referer: http://114.242.119.194:9714/login/login.html)
+2018-05-21 17:07:35,986 - INFO - Loop HallId Request 0 times, data: {'areaId': '419', 'hallId': '419001', 'proId': '6'}
+2018-05-21 17:07:35,987 - DEBUG - Sending cookies to: <POST http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+Cookie: JSESSIONID=5C31786D4EAC3BC5E58DEF31DF70F4FD.node1; ObSSOCookie=N%2FxehZNyR6LmDkP19P2p%2B0eOrvcjL63LPhC7gCLJCAVg1VMzRSHIJHdjvNnmo73CiVJ4hK5olsVu%2ByoO62Aepr9fgBx5ToG0hGk50Oixtrpdrd27c8b1BFSvRPnNT3YVVsOnjfLla5%2BG15PJhlIDEiCnnGFWdS3WfX6Ez%2FWLeq7yZowHtdZnbYqOSgx0%2Fu6BbrngwtSd7Y9XWIRKjAxZyzVjdfGM%2BaiM1IJkmEVEkA6JK1nLJlWZMiccSMotJBHmskvIfJyfvQjx04RhaS0ACw%3D%3D; cookiesession1=3D6E3BA9PUMYBFJJNDDXWXIZ4JQCF423
+
+2018-05-21 17:07:35,987 - INFO - Loop HallId Request 1 times, data: {'areaId': '410', 'hallId': '410001', 'proId': '6'}
+2018-05-21 17:07:35,989 - INFO - Loop HallId Request 2 times, data: {'areaId': '413', 'hallId': '413001', 'proId': '6'}
+2018-05-21 17:07:35,989 - INFO - Loop HallId Request 3 times, data: {'areaId': '416', 'hallId': '416001', 'proId': '6'}
+2018-05-21 17:07:35,990 - INFO - Loop HallId Request 4 times, data: {'areaId': '415', 'hallId': '415001', 'proId': '6'}
+2018-05-21 17:07:35,990 - INFO - Loop HallId Request 5 times, data: {'areaId': '414', 'hallId': '414001', 'proId': '6'}
+2018-05-21 17:07:35,990 - INFO - Loop HallId Request 6 times, data: {'areaId': '418', 'hallId': '418001', 'proId': '6'}
+2018-05-21 17:07:35,990 - INFO - Loop HallId Request 7 times, data: {'areaId': '412', 'hallId': '412001', 'proId': '6'}
+2018-05-21 17:07:35,992 - INFO - Loop HallId Request 8 times, data: {'areaId': '421', 'hallId': '421001', 'proId': '6'}
+2018-05-21 17:07:35,992 - INFO - Loop HallId Request 9 times, data: {'areaId': '427', 'hallId': '427001', 'proId': '6'}
+2018-05-21 17:07:35,992 - INFO - Loop HallId Request 10 times, data: {'areaId': '024', 'hallId': '024001', 'proId': '6'}
+2018-05-21 17:07:35,993 - INFO - Loop HallId Request 11 times, data: {'areaId': '411', 'hallId': '411001', 'proId': '6'}
+2018-05-21 17:07:35,993 - INFO - Loop HallId Request 12 times, data: {'areaId': '429', 'hallId': '429001', 'proId': '6'}
+2018-05-21 17:07:35,993 - INFO - Loop HallId Request 13 times, data: {'areaId': '417', 'hallId': '417001', 'proId': '6'}
+2018-05-21 17:07:35,996 - DEBUG - Sending cookies to: <POST http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+Cookie: JSESSIONID=5C31786D4EAC3BC5E58DEF31DF70F4FD.node1; ObSSOCookie=N%2FxehZNyR6LmDkP19P2p%2B0eOrvcjL63LPhC7gCLJCAVg1VMzRSHIJHdjvNnmo73CiVJ4hK5olsVu%2ByoO62Aepr9fgBx5ToG0hGk50Oixtrpdrd27c8b1BFSvRPnNT3YVVsOnjfLla5%2BG15PJhlIDEiCnnGFWdS3WfX6Ez%2FWLeq7yZowHtdZnbYqOSgx0%2Fu6BbrngwtSd7Y9XWIRKjAxZyzVjdfGM%2BaiM1IJkmEVEkA6JK1nLJlWZMiccSMotJBHmskvIfJyfvQjx04RhaS0ACw%3D%3D; cookiesession1=3D6E3BA9PUMYBFJJNDDXWXIZ4JQCF423
+
+2018-05-21 17:07:35,996 - DEBUG - Sending cookies to: <POST http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+Cookie: JSESSIONID=5C31786D4EAC3BC5E58DEF31DF70F4FD.node1; ObSSOCookie=N%2FxehZNyR6LmDkP19P2p%2B0eOrvcjL63LPhC7gCLJCAVg1VMzRSHIJHdjvNnmo73CiVJ4hK5olsVu%2ByoO62Aepr9fgBx5ToG0hGk50Oixtrpdrd27c8b1BFSvRPnNT3YVVsOnjfLla5%2BG15PJhlIDEiCnnGFWdS3WfX6Ez%2FWLeq7yZowHtdZnbYqOSgx0%2Fu6BbrngwtSd7Y9XWIRKjAxZyzVjdfGM%2BaiM1IJkmEVEkA6JK1nLJlWZMiccSMotJBHmskvIfJyfvQjx04RhaS0ACw%3D%3D; cookiesession1=3D6E3BA9PUMYBFJJNDDXWXIZ4JQCF423
+
+2018-05-21 17:07:35,996 - DEBUG - Sending cookies to: <POST http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+Cookie: JSESSIONID=5C31786D4EAC3BC5E58DEF31DF70F4FD.node1; ObSSOCookie=N%2FxehZNyR6LmDkP19P2p%2B0eOrvcjL63LPhC7gCLJCAVg1VMzRSHIJHdjvNnmo73CiVJ4hK5olsVu%2ByoO62Aepr9fgBx5ToG0hGk50Oixtrpdrd27c8b1BFSvRPnNT3YVVsOnjfLla5%2BG15PJhlIDEiCnnGFWdS3WfX6Ez%2FWLeq7yZowHtdZnbYqOSgx0%2Fu6BbrngwtSd7Y9XWIRKjAxZyzVjdfGM%2BaiM1IJkmEVEkA6JK1nLJlWZMiccSMotJBHmskvIfJyfvQjx04RhaS0ACw%3D%3D; cookiesession1=3D6E3BA9PUMYBFJJNDDXWXIZ4JQCF423
+
+2018-05-21 17:07:35,996 - DEBUG - Sending cookies to: <POST http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+Cookie: JSESSIONID=5C31786D4EAC3BC5E58DEF31DF70F4FD.node1; ObSSOCookie=N%2FxehZNyR6LmDkP19P2p%2B0eOrvcjL63LPhC7gCLJCAVg1VMzRSHIJHdjvNnmo73CiVJ4hK5olsVu%2ByoO62Aepr9fgBx5ToG0hGk50Oixtrpdrd27c8b1BFSvRPnNT3YVVsOnjfLla5%2BG15PJhlIDEiCnnGFWdS3WfX6Ez%2FWLeq7yZowHtdZnbYqOSgx0%2Fu6BbrngwtSd7Y9XWIRKjAxZyzVjdfGM%2BaiM1IJkmEVEkA6JK1nLJlWZMiccSMotJBHmskvIfJyfvQjx04RhaS0ACw%3D%3D; cookiesession1=3D6E3BA9PUMYBFJJNDDXWXIZ4JQCF423
+
+2018-05-21 17:07:35,997 - DEBUG - Sending cookies to: <POST http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+Cookie: JSESSIONID=5C31786D4EAC3BC5E58DEF31DF70F4FD.node1; ObSSOCookie=N%2FxehZNyR6LmDkP19P2p%2B0eOrvcjL63LPhC7gCLJCAVg1VMzRSHIJHdjvNnmo73CiVJ4hK5olsVu%2ByoO62Aepr9fgBx5ToG0hGk50Oixtrpdrd27c8b1BFSvRPnNT3YVVsOnjfLla5%2BG15PJhlIDEiCnnGFWdS3WfX6Ez%2FWLeq7yZowHtdZnbYqOSgx0%2Fu6BbrngwtSd7Y9XWIRKjAxZyzVjdfGM%2BaiM1IJkmEVEkA6JK1nLJlWZMiccSMotJBHmskvIfJyfvQjx04RhaS0ACw%3D%3D; cookiesession1=3D6E3BA9PUMYBFJJNDDXWXIZ4JQCF423
+
+2018-05-21 17:07:35,997 - DEBUG - Sending cookies to: <POST http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+Cookie: JSESSIONID=5C31786D4EAC3BC5E58DEF31DF70F4FD.node1; ObSSOCookie=N%2FxehZNyR6LmDkP19P2p%2B0eOrvcjL63LPhC7gCLJCAVg1VMzRSHIJHdjvNnmo73CiVJ4hK5olsVu%2ByoO62Aepr9fgBx5ToG0hGk50Oixtrpdrd27c8b1BFSvRPnNT3YVVsOnjfLla5%2BG15PJhlIDEiCnnGFWdS3WfX6Ez%2FWLeq7yZowHtdZnbYqOSgx0%2Fu6BbrngwtSd7Y9XWIRKjAxZyzVjdfGM%2BaiM1IJkmEVEkA6JK1nLJlWZMiccSMotJBHmskvIfJyfvQjx04RhaS0ACw%3D%3D; cookiesession1=3D6E3BA9PUMYBFJJNDDXWXIZ4JQCF423
+
+2018-05-21 17:07:35,999 - DEBUG - Sending cookies to: <POST http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+Cookie: JSESSIONID=5C31786D4EAC3BC5E58DEF31DF70F4FD.node1; ObSSOCookie=N%2FxehZNyR6LmDkP19P2p%2B0eOrvcjL63LPhC7gCLJCAVg1VMzRSHIJHdjvNnmo73CiVJ4hK5olsVu%2ByoO62Aepr9fgBx5ToG0hGk50Oixtrpdrd27c8b1BFSvRPnNT3YVVsOnjfLla5%2BG15PJhlIDEiCnnGFWdS3WfX6Ez%2FWLeq7yZowHtdZnbYqOSgx0%2Fu6BbrngwtSd7Y9XWIRKjAxZyzVjdfGM%2BaiM1IJkmEVEkA6JK1nLJlWZMiccSMotJBHmskvIfJyfvQjx04RhaS0ACw%3D%3D; cookiesession1=3D6E3BA9PUMYBFJJNDDXWXIZ4JQCF423
+
+2018-05-21 17:07:35,999 - DEBUG - Sending cookies to: <POST http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+Cookie: JSESSIONID=5C31786D4EAC3BC5E58DEF31DF70F4FD.node1; ObSSOCookie=N%2FxehZNyR6LmDkP19P2p%2B0eOrvcjL63LPhC7gCLJCAVg1VMzRSHIJHdjvNnmo73CiVJ4hK5olsVu%2ByoO62Aepr9fgBx5ToG0hGk50Oixtrpdrd27c8b1BFSvRPnNT3YVVsOnjfLla5%2BG15PJhlIDEiCnnGFWdS3WfX6Ez%2FWLeq7yZowHtdZnbYqOSgx0%2Fu6BbrngwtSd7Y9XWIRKjAxZyzVjdfGM%2BaiM1IJkmEVEkA6JK1nLJlWZMiccSMotJBHmskvIfJyfvQjx04RhaS0ACw%3D%3D; cookiesession1=3D6E3BA9PUMYBFJJNDDXWXIZ4JQCF423
+
+2018-05-21 17:07:36,000 - DEBUG - Sending cookies to: <POST http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+Cookie: JSESSIONID=5C31786D4EAC3BC5E58DEF31DF70F4FD.node1; ObSSOCookie=N%2FxehZNyR6LmDkP19P2p%2B0eOrvcjL63LPhC7gCLJCAVg1VMzRSHIJHdjvNnmo73CiVJ4hK5olsVu%2ByoO62Aepr9fgBx5ToG0hGk50Oixtrpdrd27c8b1BFSvRPnNT3YVVsOnjfLla5%2BG15PJhlIDEiCnnGFWdS3WfX6Ez%2FWLeq7yZowHtdZnbYqOSgx0%2Fu6BbrngwtSd7Y9XWIRKjAxZyzVjdfGM%2BaiM1IJkmEVEkA6JK1nLJlWZMiccSMotJBHmskvIfJyfvQjx04RhaS0ACw%3D%3D; cookiesession1=3D6E3BA9PUMYBFJJNDDXWXIZ4JQCF423
+
+2018-05-21 17:07:36,002 - DEBUG - Sending cookies to: <POST http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+Cookie: JSESSIONID=5C31786D4EAC3BC5E58DEF31DF70F4FD.node1; ObSSOCookie=N%2FxehZNyR6LmDkP19P2p%2B0eOrvcjL63LPhC7gCLJCAVg1VMzRSHIJHdjvNnmo73CiVJ4hK5olsVu%2ByoO62Aepr9fgBx5ToG0hGk50Oixtrpdrd27c8b1BFSvRPnNT3YVVsOnjfLla5%2BG15PJhlIDEiCnnGFWdS3WfX6Ez%2FWLeq7yZowHtdZnbYqOSgx0%2Fu6BbrngwtSd7Y9XWIRKjAxZyzVjdfGM%2BaiM1IJkmEVEkA6JK1nLJlWZMiccSMotJBHmskvIfJyfvQjx04RhaS0ACw%3D%3D; cookiesession1=3D6E3BA9PUMYBFJJNDDXWXIZ4JQCF423
+
+2018-05-21 17:07:36,003 - DEBUG - Sending cookies to: <POST http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+Cookie: JSESSIONID=5C31786D4EAC3BC5E58DEF31DF70F4FD.node1; ObSSOCookie=N%2FxehZNyR6LmDkP19P2p%2B0eOrvcjL63LPhC7gCLJCAVg1VMzRSHIJHdjvNnmo73CiVJ4hK5olsVu%2ByoO62Aepr9fgBx5ToG0hGk50Oixtrpdrd27c8b1BFSvRPnNT3YVVsOnjfLla5%2BG15PJhlIDEiCnnGFWdS3WfX6Ez%2FWLeq7yZowHtdZnbYqOSgx0%2Fu6BbrngwtSd7Y9XWIRKjAxZyzVjdfGM%2BaiM1IJkmEVEkA6JK1nLJlWZMiccSMotJBHmskvIfJyfvQjx04RhaS0ACw%3D%3D; cookiesession1=3D6E3BA9PUMYBFJJNDDXWXIZ4JQCF423
+
+2018-05-21 17:07:36,003 - DEBUG - Sending cookies to: <POST http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+Cookie: JSESSIONID=5C31786D4EAC3BC5E58DEF31DF70F4FD.node1; ObSSOCookie=N%2FxehZNyR6LmDkP19P2p%2B0eOrvcjL63LPhC7gCLJCAVg1VMzRSHIJHdjvNnmo73CiVJ4hK5olsVu%2ByoO62Aepr9fgBx5ToG0hGk50Oixtrpdrd27c8b1BFSvRPnNT3YVVsOnjfLla5%2BG15PJhlIDEiCnnGFWdS3WfX6Ez%2FWLeq7yZowHtdZnbYqOSgx0%2Fu6BbrngwtSd7Y9XWIRKjAxZyzVjdfGM%2BaiM1IJkmEVEkA6JK1nLJlWZMiccSMotJBHmskvIfJyfvQjx04RhaS0ACw%3D%3D; cookiesession1=3D6E3BA9PUMYBFJJNDDXWXIZ4JQCF423
+
+2018-05-21 17:07:36,003 - DEBUG - Sending cookies to: <POST http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+Cookie: JSESSIONID=5C31786D4EAC3BC5E58DEF31DF70F4FD.node1; ObSSOCookie=N%2FxehZNyR6LmDkP19P2p%2B0eOrvcjL63LPhC7gCLJCAVg1VMzRSHIJHdjvNnmo73CiVJ4hK5olsVu%2ByoO62Aepr9fgBx5ToG0hGk50Oixtrpdrd27c8b1BFSvRPnNT3YVVsOnjfLla5%2BG15PJhlIDEiCnnGFWdS3WfX6Ez%2FWLeq7yZowHtdZnbYqOSgx0%2Fu6BbrngwtSd7Y9XWIRKjAxZyzVjdfGM%2BaiM1IJkmEVEkA6JK1nLJlWZMiccSMotJBHmskvIfJyfvQjx04RhaS0ACw%3D%3D; cookiesession1=3D6E3BA9PUMYBFJJNDDXWXIZ4JQCF423
+
+2018-05-21 17:07:39,848 - INFO - slot: 114.242.119.194 | conc: 1 | delay: 3000 ms (+0) | latency:   18 ms | size:     0 bytes
+2018-05-21 17:07:39,848 - DEBUG - Received cookies from: <302 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+Set-Cookie: ObSSOCookie=g1Scn7SJ4gelwMkRa6lwA0klJwA9fKOBGPi2Q2CNguBkdG77WZ4P9EzXrKHrAeUnGFw8IAI8lQkYJtwocqkYWKR40pidpVQnAblCy%2F9RJjgiHODFMP1Y42P8yJfCvd16U6AajB5RJ%2Fu%2FoC4teDZBNV%2FsdyiHsPByF2W1Q84nLxhyuYK0k5XjKjSpmoJsfKZv9TVAs%2Fks66JYkXZCUx1y7ii2qlucBf00cPbfCP34cxgUZ5E%2FAFnC8E9cxEgBg6WuA7bd2ULBrlh9rOfRFDEkWpFQ1KFnOOfDSu%2FVt0jKKBw%3D; path=/;
+
+2018-05-21 17:07:39,848 - DEBUG - Redirecting (302) to <GET http://114.242.119.194:9714/infoplatform/login/loginOim.jsp> from <POST http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+2018-05-21 17:07:39,848 - DEBUG - Sending cookies to: <GET http://114.242.119.194:9714/infoplatform/login/loginOim.jsp>
+Cookie: JSESSIONID=5C31786D4EAC3BC5E58DEF31DF70F4FD.node1; ObSSOCookie=g1Scn7SJ4gelwMkRa6lwA0klJwA9fKOBGPi2Q2CNguBkdG77WZ4P9EzXrKHrAeUnGFw8IAI8lQkYJtwocqkYWKR40pidpVQnAblCy%2F9RJjgiHODFMP1Y42P8yJfCvd16U6AajB5RJ%2Fu%2FoC4teDZBNV%2FsdyiHsPByF2W1Q84nLxhyuYK0k5XjKjSpmoJsfKZv9TVAs%2Fks66JYkXZCUx1y7ii2qlucBf00cPbfCP34cxgUZ5E%2FAFnC8E9cxEgBg6WuA7bd2ULBrlh9rOfRFDEkWpFQ1KFnOOfDSu%2FVt0jKKBw%3D; cookiesession1=3D6E3BA9PUMYBFJJNDDXWXIZ4JQCF423
+
+2018-05-21 17:07:43,381 - INFO - slot: 114.242.119.194 | conc: 1 | delay: 3000 ms (+0) | latency:  141 ms | size: 52329 bytes
+2018-05-21 17:07:43,382 - DEBUG - Received cookies from: <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+Set-Cookie: ObSSOCookie=PDw1JEv2mKbrN%2BrHe0GCXKje1SEYOfxP0S3cEP51WgEQ9hFeAsnoKnfVnvDuI1oslXjDri1k%2Bon%2FYDHGLkZN29kFvtSw0o0EJ87R%2FzgfeaSkheUWYZPC9T36%2Fiugl68ZBlQiTNyvvTK2Uigzjj4Cf7jHQe4cJ%2BbP6oZA1UWN9zMpqogjQu1Ez%2BO8%2FqUs5sMQ6O%2FpCwrqtPT8Er0HKUvDPII9CclWUQAKyP9tdTXih5XZqN1e4OMUpkLA2yrw%2FhkXYa5cc5AbiASI9LwhMStXBt5f%2BM49nK2qIuHFJx8Lnvg%3D; path=/;
+
+2018-05-21 17:07:43,382 - DEBUG - Crawled (200) <POST http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action> (referer: http://114.242.119.194:9714/login/login.html)
+2018-05-21 17:07:43,487 - INFO - parse post data: {'areaId': '417', 'hallId': '417001', 'proId': '6'}
+2018-05-21 17:07:43,490 - INFO - item data: {'areaId': '417',
+ 'areaName': '\xe8\x90\xa5\xe5\x8f\xa3\xe5\xb8\x82',
+ 'hallId': '417006',
+ 'hallName': '\xe8\xbe\xbd\xe5\xae\x81\xe7\x9c\x81\xe8\x90\xa5\xe5\x8f\xa3\xe5\xb8\x82\xe9\xbe\x99\xe6\xba\x90\xe8\x8a\xb1\xe5\x9b\xad',
+ 'proId': '6',
+ 'proName': '\xe8\xbe\xbd\xe5\xae\x81'}
+2018-05-21 17:07:43,512 - DEBUG - Scraped from <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+6
+2018-05-21 17:07:43,513 - INFO - item data: {'areaId': '417',
+ 'areaName': '\xe8\x90\xa5\xe5\x8f\xa3\xe5\xb8\x82',
+ 'hallId': '417001',
+ 'hallName': '\xe8\xbe\xbd\xe5\xae\x81\xe7\x9c\x81\xe8\x90\xa5\xe5\x8f\xa3\xe5\xb8\x82\xe5\xbc\x80\xe5\x8f\x91\xe9\x87\x8c',
+ 'proId': '6',
+ 'proName': '\xe8\xbe\xbd\xe5\xae\x81'}
+2018-05-21 17:07:43,513 - DEBUG - Scraped from <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+6
+2018-05-21 17:07:43,513 - INFO - item data: {'areaId': '417',
+ 'areaName': '\xe8\x90\xa5\xe5\x8f\xa3\xe5\xb8\x82',
+ 'hallId': '417004',
+ 'hallName': '\xe8\xbe\xbd\xe5\xae\x81\xe7\x9c\x81\xe8\x90\xa5\xe5\x8f\xa3\xe5\xa4\xa7\xe7\x9f\xb3\xe6\xa1\xa5\xe5\xb8\x82\xe7\xb9\x81\xe8\x8d\xa3\xe8\xa1\x97',
+ 'proId': '6',
+ 'proName': '\xe8\xbe\xbd\xe5\xae\x81'}
+2018-05-21 17:07:43,515 - DEBUG - Scraped from <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+6
+2018-05-21 17:07:43,515 - INFO - item data: {'areaId': '417',
+ 'areaName': '\xe8\x90\xa5\xe5\x8f\xa3\xe5\xb8\x82',
+ 'hallId': '417003',
+ 'hallName': '\xe8\xbe\xbd\xe5\xae\x81\xe7\x9c\x81\xe8\x90\xa5\xe5\x8f\xa3\xe5\xb8\x82\xe9\xb2\x85\xe9\xb1\xbc\xe5\x9c\x88\xe6\x98\x86\xe4\xbb\x91\xe5\xa4\xa7\xe8\xa1\x97',
+ 'proId': '6',
+ 'proName': '\xe8\xbe\xbd\xe5\xae\x81'}
+2018-05-21 17:07:43,516 - DEBUG - Scraped from <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+6
+2018-05-21 17:07:43,516 - INFO - item data: {'areaId': '417',
+ 'areaName': '\xe8\x90\xa5\xe5\x8f\xa3\xe5\xb8\x82',
+ 'hallId': '417005',
+ 'hallName': '\xe8\xbe\xbd\xe5\xae\x81\xe7\x9c\x81\xe8\x90\xa5\xe5\x8f\xa3\xe5\xb8\x82\xe5\x85\xac\xe5\x9b\xad\xe8\xb7\xaf',
+ 'proId': '6',
+ 'proName': '\xe8\xbe\xbd\xe5\xae\x81'}
+2018-05-21 17:07:43,516 - DEBUG - Scraped from <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+6
+2018-05-21 17:07:43,517 - INFO - item data: {'areaId': '417',
+ 'areaName': '\xe8\x90\xa5\xe5\x8f\xa3\xe5\xb8\x82',
+ 'hallId': '417002',
+ 'hallName': '\xe8\xbe\xbd\xe5\xae\x81\xe7\x9c\x81\xe8\x90\xa5\xe5\x8f\xa3\xe7\x9b\x96\xe5\xb7\x9e\xe5\xb8\x82\xe7\x9b\x96\xe5\xb7\x9e\xe8\xb7\xaf',
+ 'proId': '6',
+ 'proName': '\xe8\xbe\xbd\xe5\xae\x81'}
+2018-05-21 17:07:43,517 - DEBUG - Scraped from <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+6
+2018-05-21 17:07:43,519 - INFO - item data: {'areaId': '417',
+ 'areaName': '\xe8\x90\xa5\xe5\x8f\xa3\xe5\xb8\x82',
+ 'hallId': '417007',
+ 'hallName': '\xe8\xbe\xbd\xe5\xae\x81\xe7\x9c\x81\xe8\x90\xa5\xe5\x8f\xa3\xe5\xb8\x82\xe7\xba\xa2\xe7\xa6\x8f\xe6\xba\x90',
+ 'proId': '6',
+ 'proName': '\xe8\xbe\xbd\xe5\xae\x81'}
+2018-05-21 17:07:43,519 - DEBUG - Scraped from <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+6
+2018-05-21 17:07:47,657 - INFO - slot: 114.242.119.194 | conc: 1 | delay: 3000 ms (+0) | latency:   17 ms | size:     0 bytes
+2018-05-21 17:07:47,657 - DEBUG - Received cookies from: <302 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+Set-Cookie: ObSSOCookie=UzHWvzOSqBSesGSY%2BwV35sZZzgywE5%2FRVbRiXXbw2gC%2Fhit2gTAJEBojbK%2Fb3EbUV7RVt7iKw4lMcBwnBXfTHVNecf03wlGReVSpZgvigXfWl7WQ99mYThSmpuddZPcklALiZmbWw%2FSIH8%2B4BcKtNHHquPVIPih185bN8Kj7NH4vdI0ZGCqC67cYTFR5U206gfmOCzXenRbfQAEhLhQve0ew%2FY88hSN%2FtN7iQQYT1sESNBuAP1T86vEP1DD1Sl01OoT6Ay%2Bx6h8pk94yreGnQh5SZLfug1brP7aywcB3OR0%3D; path=/;
+
+2018-05-21 17:07:47,657 - DEBUG - Redirecting (302) to <GET http://114.242.119.194:9714/infoplatform/login/loginOim.jsp> from <POST http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+2018-05-21 17:07:47,657 - DEBUG - Sending cookies to: <GET http://114.242.119.194:9714/infoplatform/login/loginOim.jsp>
+Cookie: JSESSIONID=5C31786D4EAC3BC5E58DEF31DF70F4FD.node1; ObSSOCookie=UzHWvzOSqBSesGSY%2BwV35sZZzgywE5%2FRVbRiXXbw2gC%2Fhit2gTAJEBojbK%2Fb3EbUV7RVt7iKw4lMcBwnBXfTHVNecf03wlGReVSpZgvigXfWl7WQ99mYThSmpuddZPcklALiZmbWw%2FSIH8%2B4BcKtNHHquPVIPih185bN8Kj7NH4vdI0ZGCqC67cYTFR5U206gfmOCzXenRbfQAEhLhQve0ew%2FY88hSN%2FtN7iQQYT1sESNBuAP1T86vEP1DD1Sl01OoT6Ay%2Bx6h8pk94yreGnQh5SZLfug1brP7aywcB3OR0%3D; cookiesession1=3D6E3BA9PUMYBFJJNDDXWXIZ4JQCF423
+
+2018-05-21 17:07:52,188 - INFO - slot: 114.242.119.194 | conc: 1 | delay: 3000 ms (+0) | latency:  124 ms | size: 50546 bytes
+2018-05-21 17:07:52,188 - DEBUG - Received cookies from: <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+Set-Cookie: ObSSOCookie=i2JQA69ZiGEhj0%2BmrgGwbjEs2XKS0USXrhmD7JMsFG9AgoMNJlVo3HNfH1IHssp6zqwBe7hjQY4Q36Zf6aDXHXetKwwpsbWJF60xXM6MnDJr%2FaJ%2BJ5HL6TJ%2BSJJTctdfr1qbtUNybThOVczX6mgX5jNkRTYA2Hse5SZt%2FKmmCTn04nZ856ASSvEK6U6BCrx3uhXQMrxgPKfMR6%2BeSmhBvQUUJbwxzRKKOEXTyrIWnEQwnQjdrbzaIf%2FmKhtGRY2xYE3pt69BJXSetDNrn70RZu%2FrjPb7CCBi%2BFubpzvyCh0%3D; path=/;
+
+2018-05-21 17:07:52,190 - DEBUG - Crawled (200) <POST http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action> (referer: http://114.242.119.194:9714/login/login.html)
+2018-05-21 17:07:52,293 - INFO - parse post data: {'areaId': '411', 'hallId': '411001', 'proId': '6'}
+2018-05-21 17:07:52,295 - INFO - item data: {'areaId': '411',
+ 'areaName': '\xe5\xa4\xa7\xe8\xbf\x9e\xe5\xb8\x82',
+ 'hallId': '411007',
+ 'hallName': '\xe8\xbe\xbd\xe5\xae\x81\xe7\x9c\x81\xe5\xa4\xa7\xe8\xbf\x9e\xe5\xb8\x82\xe4\xba\x94\xe4\xba\x94\xe8\xb7\xaf',
+ 'proId': '6',
+ 'proName': '\xe8\xbe\xbd\xe5\xae\x81'}
+2018-05-21 17:07:52,295 - DEBUG - Scraped from <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+6
+2018-05-21 17:07:52,296 - INFO - item data: {'areaId': '411',
+ 'areaName': '\xe5\xa4\xa7\xe8\xbf\x9e\xe5\xb8\x82',
+ 'hallId': '411001',
+ 'hallName': '\xe8\xbe\xbd\xe5\xae\x81\xe7\x9c\x81\xe5\xa4\xa7\xe8\xbf\x9e\xe5\xb8\x82\xe5\xb1\xb1\xe4\xb8\x9c\xe8\xb7\xaf',
+ 'proId': '6',
+ 'proName': '\xe8\xbe\xbd\xe5\xae\x81'}
+2018-05-21 17:07:52,296 - DEBUG - Scraped from <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+6
+2018-05-21 17:07:52,296 - INFO - item data: {'areaId': '411',
+ 'areaName': '\xe5\xa4\xa7\xe8\xbf\x9e\xe5\xb8\x82',
+ 'hallId': '411011',
+ 'hallName': '\xe8\xbe\xbd\xe5\xae\x81\xe7\x9c\x81\xe5\xa4\xa7\xe8\xbf\x9e\xe5\xb8\x82\xe7\xab\x99\xe5\x89\x8d\xe8\xa1\x97\xe9\x81\x93',
+ 'proId': '6',
+ 'proName': '\xe8\xbe\xbd\xe5\xae\x81'}
+2018-05-21 17:07:52,298 - DEBUG - Scraped from <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+6
+2018-05-21 17:07:52,299 - INFO - item data: {'areaId': '411',
+ 'areaName': '\xe5\xa4\xa7\xe8\xbf\x9e\xe5\xb8\x82',
+ 'hallId': '411010',
+ 'hallName': '\xe8\xbe\xbd\xe5\xae\x81\xe7\x9c\x81\xe5\xa4\xa7\xe8\xbf\x9e\xe5\xb8\x82\xe7\x93\xa6\xe6\x88\xbf\xe5\xba\x97\xe5\xb8\x82\xe9\x92\xbb\xe7\x9f\xb3\xe8\xa1\x97',
+ 'proId': '6',
+ 'proName': '\xe8\xbe\xbd\xe5\xae\x81'}
+2018-05-21 17:07:52,299 - DEBUG - Scraped from <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+6
+2018-05-21 17:07:52,299 - INFO - item data: {'areaId': '411',
+ 'areaName': '\xe5\xa4\xa7\xe8\xbf\x9e\xe5\xb8\x82',
+ 'hallId': '411004',
+ 'hallName': '\xe8\xbe\xbd\xe5\xae\x81\xe7\x9c\x81\xe5\xa4\xa7\xe8\xbf\x9e\xe5\xb8\x82\xe5\xbc\x80\xe5\x8f\x91\xe5\x8c\xba\xe9\x87\x91\xe9\xa9\xac\xe8\xb7\xaf',
+ 'proId': '6',
+ 'proName': '\xe8\xbe\xbd\xe5\xae\x81'}
+2018-05-21 17:07:52,299 - DEBUG - Scraped from <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+6
+2018-05-21 17:07:52,301 - INFO - item data: {'areaId': '411',
+ 'areaName': '\xe5\xa4\xa7\xe8\xbf\x9e\xe5\xb8\x82',
+ 'hallId': '411012',
+ 'hallName': '\xe8\xbe\xbd\xe5\xae\x81\xe7\x9c\x81\xe5\xa4\xa7\xe8\xbf\x9e\xe5\xb8\x82\xe8\x83\x9c\xe5\x88\xa9\xe8\xb7\xaf',
+ 'proId': '6',
+ 'proName': '\xe8\xbe\xbd\xe5\xae\x81'}
+2018-05-21 17:07:52,302 - DEBUG - Scraped from <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+6
+2018-05-21 17:07:52,302 - INFO - item data: {'areaId': '411',
+ 'areaName': '\xe5\xa4\xa7\xe8\xbf\x9e\xe5\xb8\x82',
+ 'hallId': '411003',
+ 'hallName': '\xe8\xbe\xbd\xe5\xae\x81\xe7\x9c\x81\xe5\xa4\xa7\xe8\xbf\x9e\xe5\xb8\x82\xe8\xa5\xbf\xe5\x8d\x97\xe8\xb7\xaf',
+ 'proId': '6',
+ 'proName': '\xe8\xbe\xbd\xe5\xae\x81'}
+2018-05-21 17:07:52,302 - DEBUG - Scraped from <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+6
+2018-05-21 17:07:52,303 - INFO - item data: {'areaId': '411',
+ 'areaName': '\xe5\xa4\xa7\xe8\xbf\x9e\xe5\xb8\x82',
+ 'hallId': '411006',
+ 'hallName': '\xe8\xbe\xbd\xe5\xae\x81\xe7\x9c\x81\xe5\xa4\xa7\xe8\xbf\x9e\xe5\xb8\x82\xe5\xa4\xa9\xe6\xb4\xa5\xe8\xa1\x97',
+ 'proId': '6',
+ 'proName': '\xe8\xbe\xbd\xe5\xae\x81'}
+2018-05-21 17:07:52,305 - DEBUG - Scraped from <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+6
+2018-05-21 17:07:52,305 - INFO - item data: {'areaId': '411',
+ 'areaName': '\xe5\xa4\xa7\xe8\xbf\x9e\xe5\xb8\x82',
+ 'hallId': '411002',
+ 'hallName': '\xe8\xbe\xbd\xe5\xae\x81\xe7\x9c\x81\xe5\xa4\xa7\xe8\xbf\x9e\xe5\xb8\x82\xe6\xad\xa6\xe6\x98\x8c\xe8\xa1\x97',
+ 'proId': '6',
+ 'proName': '\xe8\xbe\xbd\xe5\xae\x81'}
+2018-05-21 17:07:52,305 - DEBUG - Scraped from <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+6
+2018-05-21 17:07:52,306 - INFO - item data: {'areaId': '411',
+ 'areaName': '\xe5\xa4\xa7\xe8\xbf\x9e\xe5\xb8\x82',
+ 'hallId': '411008',
+ 'hallName': '\xe8\xbe\xbd\xe5\xae\x81\xe7\x9c\x81\xe5\xa4\xa7\xe8\xbf\x9e\xe5\xb8\x82\xe6\x99\xae\xe5\x85\xb0\xe5\xba\x97\xe5\xb8\x82\xe6\x96\x87\xe5\x8c\x96\xe8\xb7\xaf',
+ 'proId': '6',
+ 'proName': '\xe8\xbe\xbd\xe5\xae\x81'}
+2018-05-21 17:07:52,308 - DEBUG - Scraped from <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+6
+2018-05-21 17:07:52,308 - INFO - item data: {'areaId': '411',
+ 'areaName': '\xe5\xa4\xa7\xe8\xbf\x9e\xe5\xb8\x82',
+ 'hallId': '411009',
+ 'hallName': '\xe8\xbe\xbd\xe5\xae\x81\xe7\x9c\x81\xe5\xa4\xa7\xe8\xbf\x9e\xe5\xb8\x82\xe5\xba\x84\xe6\xb2\xb3\xe5\xb8\x82\xe5\xbb\xba\xe8\xae\xbe\xe5\xa4\xa7\xe8\xa1\x97',
+ 'proId': '6',
+ 'proName': '\xe8\xbe\xbd\xe5\xae\x81'}
+2018-05-21 17:07:52,309 - DEBUG - Scraped from <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+6
+2018-05-21 17:07:52,309 - INFO - item data: {'areaId': '411',
+ 'areaName': '\xe5\xa4\xa7\xe8\xbf\x9e\xe5\xb8\x82',
+ 'hallId': '411005',
+ 'hallName': '\xe8\xbe\xbd\xe5\xae\x81\xe7\x9c\x81\xe5\xa4\xa7\xe8\xbf\x9e\xe5\xb8\x82\xe9\x95\xbf\xe6\xb1\x9f\xe8\xb7\xaf',
+ 'proId': '6',
+ 'proName': '\xe8\xbe\xbd\xe5\xae\x81'}
+2018-05-21 17:07:52,309 - DEBUG - Scraped from <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+6
+2018-05-21 17:07:55,604 - INFO - slot: 114.242.119.194 | conc: 1 | delay: 3000 ms (+0) | latency:   18 ms | size:     0 bytes
+2018-05-21 17:07:55,605 - DEBUG - Received cookies from: <302 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+Set-Cookie: ObSSOCookie=9Rfygd1aMyhu2R27Su%2BHhIP2or8kzlwoIJmNspz%2BKmAPq8Z1qPBar1KL2ldvWUfABf0FmlV%2Bx3FUAjddzxuXekzPaHK0p8KJkA7FcLiR7vkqxeE%2B1zTpaVmQOiH78snEpOyquBut3Hg9VjsXoqSemS%2B%2FScmbUsfFfs12pOLH%2BIhwnFdXvzHY2V9ccIbc%2Bac8%2BXNYiCyVl3slT9UXD8%2Bqvn2Xb1%2BSEqk6P%2FjDmqbzTp%2BJoeW3TRvCNTmpsSNQjV8QGnhHdQzfXk15nDGmdql6XhGOK6%2FlIaVwuuOORYgAfx0%3D; path=/;
+
+2018-05-21 17:07:55,605 - DEBUG - Redirecting (302) to <GET http://114.242.119.194:9714/infoplatform/login/loginOim.jsp> from <POST http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+2018-05-21 17:07:55,605 - DEBUG - Sending cookies to: <GET http://114.242.119.194:9714/infoplatform/login/loginOim.jsp>
+Cookie: JSESSIONID=5C31786D4EAC3BC5E58DEF31DF70F4FD.node1; ObSSOCookie=9Rfygd1aMyhu2R27Su%2BHhIP2or8kzlwoIJmNspz%2BKmAPq8Z1qPBar1KL2ldvWUfABf0FmlV%2Bx3FUAjddzxuXekzPaHK0p8KJkA7FcLiR7vkqxeE%2B1zTpaVmQOiH78snEpOyquBut3Hg9VjsXoqSemS%2B%2FScmbUsfFfs12pOLH%2BIhwnFdXvzHY2V9ccIbc%2Bac8%2BXNYiCyVl3slT9UXD8%2Bqvn2Xb1%2BSEqk6P%2FjDmqbzTp%2BJoeW3TRvCNTmpsSNQjV8QGnhHdQzfXk15nDGmdql6XhGOK6%2FlIaVwuuOORYgAfx0%3D; cookiesession1=3D6E3BA9PUMYBFJJNDDXWXIZ4JQCF423
+
+2018-05-21 17:07:59,644 - INFO - slot: 114.242.119.194 | conc: 1 | delay: 3000 ms (+0) | latency:  120 ms | size: 53368 bytes
+2018-05-21 17:07:59,645 - DEBUG - Received cookies from: <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+Set-Cookie: ObSSOCookie=Rv%2B%2FTZgjGKbjEEIOkQTlDw8pUwDfiV7%2Fn63KRn4mHjFFFAnVFA%2FkpsbttLd4228hDz54NF5e6ORzEsjzF0T8Pg3yhd0tlLIKOP7BS26pk1ZQz5yq3i5c7h23hz5G3CZIYk7zyofbPbhukxPBBJIrzneuStgjBLsdzR3itmFTWveHD68KHhfDtSSpqs53uv5Xx2EaqrTl6toxuMzBKZUcUn9M9NGw0TY0SfQVV73T1Ia6MH594NpcF8nzh4sHNJtzibSO1gMxY2CEYXy5KwMWM%2FW1UUkOiYO0EOFDl7el%2FIg%3D; path=/;
+
+2018-05-21 17:07:59,647 - DEBUG - Crawled (200) <POST http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action> (referer: http://114.242.119.194:9714/login/login.html)
+2018-05-21 17:07:59,752 - INFO - parse post data: {'areaId': '427', 'hallId': '427001', 'proId': '6'}
+2018-05-21 17:07:59,753 - INFO - item data: {'areaId': '427',
+ 'areaName': '\xe7\x9b\x98\xe9\x94\xa6\xe5\xb8\x82',
+ 'hallId': '427003',
+ 'hallName': '\xe8\xbe\xbd\xe5\xae\x81\xe7\x9c\x81\xe7\x9b\x98\xe9\x94\xa6\xe5\xb8\x82\xe6\x98\x86\xe4\xbb\x91\xe6\x96\xb0\xe5\xa4\xa9\xe5\x9c\xb0',
+ 'proId': '6',
+ 'proName': '\xe8\xbe\xbd\xe5\xae\x81'}
+2018-05-21 17:07:59,753 - DEBUG - Scraped from <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+6
+2018-05-21 17:07:59,753 - INFO - item data: {'areaId': '427',
+ 'areaName': '\xe7\x9b\x98\xe9\x94\xa6\xe5\xb8\x82',
+ 'hallId': '427001',
+ 'hallName': '\xe8\xbe\xbd\xe5\xae\x81\xe7\x9c\x81\xe7\x9b\x98\xe9\x94\xa6\xe5\xb8\x82\xe6\xb2\xb3\xe7\x95\x94\xe5\xb0\x8f\xe5\x8c\xba',
+ 'proId': '6',
+ 'proName': '\xe8\xbe\xbd\xe5\xae\x81'}
+2018-05-21 17:07:59,755 - DEBUG - Scraped from <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+6
+2018-05-21 17:07:59,755 - INFO - item data: {'areaId': '427',
+ 'areaName': '\xe7\x9b\x98\xe9\x94\xa6\xe5\xb8\x82',
+ 'hallId': '427004',
+ 'hallName': '\xe8\xbe\xbd\xe5\xae\x81\xe7\x9c\x81\xe7\x9b\x98\xe9\x94\xa6\xe5\xb8\x82\xe5\x90\x89\xe7\xa5\xa5\xe5\xb0\x8f\xe5\x8c\xba',
+ 'proId': '6',
+ 'proName': '\xe8\xbe\xbd\xe5\xae\x81'}
+2018-05-21 17:07:59,756 - DEBUG - Scraped from <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+6
+2018-05-21 17:07:59,756 - INFO - item data: {'areaId': '427',
+ 'areaName': '\xe7\x9b\x98\xe9\x94\xa6\xe5\xb8\x82',
+ 'hallId': '427005',
+ 'hallName': '\xe8\xbe\xbd\xe5\xae\x81\xe7\x9c\x81\xe7\x9b\x98\xe9\x94\xa6\xe5\xb8\x82\xe5\xa4\xa7\xe6\xb4\xbc\xe5\x8e\xbf\xe4\xb9\xa6\xe9\xa6\x99\xe6\x99\x9f\xe8\x8b\x91\xe5\xb0\x8f\xe5\x8c\xba',
+ 'proId': '6',
+ 'proName': '\xe8\xbe\xbd\xe5\xae\x81'}
+2018-05-21 17:07:59,756 - DEBUG - Scraped from <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+6
+2018-05-21 17:07:59,757 - INFO - item data: {'areaId': '427',
+ 'areaName': '\xe7\x9b\x98\xe9\x94\xa6\xe5\xb8\x82',
+ 'hallId': '427002',
+ 'hallName': '\xe8\xbe\xbd\xe5\xae\x81\xe7\x9c\x81\xe7\x9b\x98\xe9\x94\xa6\xe5\xb8\x82\xe9\x91\xab\xe5\x9b\xad\xe5\xb0\x8f\xe5\x8c\xba',
+ 'proId': '6',
+ 'proName': '\xe8\xbe\xbd\xe5\xae\x81'}
+2018-05-21 17:07:59,759 - DEBUG - Scraped from <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+6
+2018-05-21 17:08:03,374 - INFO - slot: 114.242.119.194 | conc: 1 | delay: 3000 ms (+0) | latency:   18 ms | size:     0 bytes
+2018-05-21 17:08:03,374 - DEBUG - Received cookies from: <302 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+Set-Cookie: ObSSOCookie=PJUcw0XvHOm%2FFHWE8vPAKqFGV55%2BB1jqCV6l44gHl%2BEotNvhpc0IFyJE4MPk0l1k%2F3TDbqCSqQq123EkiV78ZiTN%2BKBTuA8B9EEhQv7MMORVLuUjKSWtnHSR68izKHWQppAWEXgC5BHpqKteIO1%2B3nmlaE6%2Fjb3hIrLyJtEo7kOLqX2NBm6BS0SCyrrqMcKx7R0esmn%2FEy4ZIF%2Br1YmU63%2BKB68XG17iINmN9Db6DAkycyXY26odB%2BjyvpcdgN484MgEsJxQwceUKtFe%2BXvXOpc5XB2ezLchXOZ5kC9yAyA%3D; path=/;
+
+2018-05-21 17:08:03,375 - DEBUG - Redirecting (302) to <GET http://114.242.119.194:9714/infoplatform/login/loginOim.jsp> from <POST http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+2018-05-21 17:08:03,375 - DEBUG - Sending cookies to: <GET http://114.242.119.194:9714/infoplatform/login/loginOim.jsp>
+Cookie: JSESSIONID=5C31786D4EAC3BC5E58DEF31DF70F4FD.node1; ObSSOCookie=PJUcw0XvHOm%2FFHWE8vPAKqFGV55%2BB1jqCV6l44gHl%2BEotNvhpc0IFyJE4MPk0l1k%2F3TDbqCSqQq123EkiV78ZiTN%2BKBTuA8B9EEhQv7MMORVLuUjKSWtnHSR68izKHWQppAWEXgC5BHpqKteIO1%2B3nmlaE6%2Fjb3hIrLyJtEo7kOLqX2NBm6BS0SCyrrqMcKx7R0esmn%2FEy4ZIF%2Br1YmU63%2BKB68XG17iINmN9Db6DAkycyXY26odB%2BjyvpcdgN484MgEsJxQwceUKtFe%2BXvXOpc5XB2ezLchXOZ5kC9yAyA%3D; cookiesession1=3D6E3BA9PUMYBFJJNDDXWXIZ4JQCF423
+
+2018-05-21 17:08:06,476 - INFO - slot: 114.242.119.194 | conc: 1 | delay: 3000 ms (+0) | latency:  129 ms | size: 37069 bytes
+2018-05-21 17:08:06,477 - DEBUG - Received cookies from: <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+Set-Cookie: ObSSOCookie=s2GY%2BdunV64%2Bzv7Xd4W1VfEovx4gLBBsZQWLfLXp4jvoUckNw%2Bo7N62dZ9QmW4V44G8BeKEBIkPYQN4zjo23YiyeH14hiotxQYIMrQXgp9fR3yHb7WitH3oChPzzSeli13O3JHDdYpTmLo%2Bt%2BRa%2FChmzL9DDzZVE2ol8G4rnAiYWXt1AtJ7YJvKIQaReNsbFa8MOsTF6eJcBZ%2F6IYfKIl2PkjjQinyKS5NlYhanvYReMZlOYEbqNT8BJ5qPMpyiIJskHnNiqOU3w6uvaLo%2B20WMs%2BDR7kQRozGH%2B4yOqNM8%3D; path=/;
+
+2018-05-21 17:08:06,477 - DEBUG - Crawled (200) <POST http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action> (referer: http://114.242.119.194:9714/login/login.html)
+2018-05-21 17:08:06,585 - INFO - parse post data: {'areaId': '412', 'hallId': '412001', 'proId': '6'}
+2018-05-21 17:08:06,586 - INFO - item data: {'areaId': '412',
+ 'areaName': '\xe9\x9e\x8d\xe5\xb1\xb1\xe5\xb8\x82',
+ 'hallId': '412006',
+ 'hallName': '\xe8\xbe\xbd\xe5\xae\x81\xe7\x9c\x81\xe9\x9e\x8d\xe5\xb1\xb1\xe5\xb8\x82\xe6\x96\xb0\xe4\xb8\x96\xe7\x95\x8c\xe6\x9c\x97\xe6\x82\xa6\xe5\xb1\x85',
+ 'proId': '6',
+ 'proName': '\xe8\xbe\xbd\xe5\xae\x81'}
+2018-05-21 17:08:06,588 - DEBUG - Scraped from <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+6
+2018-05-21 17:08:06,588 - INFO - item data: {'areaId': '412',
+ 'areaName': '\xe9\x9e\x8d\xe5\xb1\xb1\xe5\xb8\x82',
+ 'hallId': '412003',
+ 'hallName': '\xe8\xbe\xbd\xe5\xae\x81\xe7\x9c\x81\xe9\x9e\x8d\xe5\xb1\xb1\xe5\xb8\x82\xe6\xb5\xb7\xe5\x9f\x8e\xe5\x8c\x97\xe5\x85\xb3\xe8\xa1\x97',
+ 'proId': '6',
+ 'proName': '\xe8\xbe\xbd\xe5\xae\x81'}
+2018-05-21 17:08:06,588 - DEBUG - Scraped from <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+6
+2018-05-21 17:08:06,589 - INFO - item data: {'areaId': '412',
+ 'areaName': '\xe9\x9e\x8d\xe5\xb1\xb1\xe5\xb8\x82',
+ 'hallId': '412001',
+ 'hallName': '\xe8\xbe\xbd\xe5\xae\x81\xe7\x9c\x81\xe9\x9e\x8d\xe5\xb1\xb1\xe5\xb8\x82\xe5\x8d\x83\xe9\xbe\x99\xe6\x88\xb7\xe6\x99\xba\xe6\x85\xa7\xe8\x8a\xb1\xe5\x9b\xad',
+ 'proId': '6',
+ 'proName': '\xe8\xbe\xbd\xe5\xae\x81'}
+2018-05-21 17:08:06,591 - DEBUG - Scraped from <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+6
+2018-05-21 17:08:06,592 - INFO - item data: {'areaId': '412',
+ 'areaName': '\xe9\x9e\x8d\xe5\xb1\xb1\xe5\xb8\x82',
+ 'hallId': '412004',
+ 'hallName': '\xe8\xbe\xbd\xe5\xae\x81\xe7\x9c\x81\xe9\x9e\x8d\xe5\xb1\xb1\xe5\xb8\x82\xe6\x96\xb0\xe5\x8d\x8e\xe8\xa1\x97',
+ 'proId': '6',
+ 'proName': '\xe8\xbe\xbd\xe5\xae\x81'}
+2018-05-21 17:08:06,592 - DEBUG - Scraped from <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+6
+2018-05-21 17:08:06,594 - INFO - item data: {'areaId': '412',
+ 'areaName': '\xe9\x9e\x8d\xe5\xb1\xb1\xe5\xb8\x82',
+ 'hallId': '412005',
+ 'hallName': '\xe8\xbe\xbd\xe5\xae\x81\xe7\x9c\x81\xe9\x9e\x8d\xe5\xb1\xb1\xe5\xb8\x82\xe5\xb2\xab\xe5\xb2\xa9\xe5\x8e\xbf\xe5\xb2\xab\xe7\x8e\x89\xe5\x9b\xbd\xe5\xae\x9d',
+ 'proId': '6',
+ 'proName': '\xe8\xbe\xbd\xe5\xae\x81'}
+2018-05-21 17:08:06,595 - DEBUG - Scraped from <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+6
+2018-05-21 17:08:09,881 - INFO - Crawled 7 pages (at 7 pages/min), scraped 29 items (at 29 items/min)
+2018-05-21 17:08:10,798 - INFO - slot: 114.242.119.194 | conc: 1 | delay: 3000 ms (+0) | latency:   17 ms | size:     0 bytes
+2018-05-21 17:08:10,799 - DEBUG - Received cookies from: <302 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+Set-Cookie: ObSSOCookie=jQOGqgGva5e3Ui%2Bz%2FIyfk1L2uXelsZQZHQmltsWxVus%2BJQqPB6mI87JC8qrPow4nU3NlERMzQUy3MAeFAVoJhxnjqfSzMdJl1Pzte%2Fks6crrYBUjEyMpder0zYePcTV0ti6Aj7YztfJfWL7JuJFv4kgWayrMAlKrh1UfUwoZGcmYCM5RnWfLySUldQFqycbqygUSZebC4ISsLmMm9dvbWMFVHYCUe1d5rwkmhS3QYiMwKTMeNH%2FM%2ByJtZw1ZX9oIwDqbLia4HRw2ud9nIqD4S9dvIsiGUKieEgjDRY99Nvo%3D; path=/;
+
+2018-05-21 17:08:10,799 - DEBUG - Redirecting (302) to <GET http://114.242.119.194:9714/infoplatform/login/loginOim.jsp> from <POST http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+2018-05-21 17:08:10,801 - DEBUG - Sending cookies to: <GET http://114.242.119.194:9714/infoplatform/login/loginOim.jsp>
+Cookie: JSESSIONID=5C31786D4EAC3BC5E58DEF31DF70F4FD.node1; ObSSOCookie=jQOGqgGva5e3Ui%2Bz%2FIyfk1L2uXelsZQZHQmltsWxVus%2BJQqPB6mI87JC8qrPow4nU3NlERMzQUy3MAeFAVoJhxnjqfSzMdJl1Pzte%2Fks6crrYBUjEyMpder0zYePcTV0ti6Aj7YztfJfWL7JuJFv4kgWayrMAlKrh1UfUwoZGcmYCM5RnWfLySUldQFqycbqygUSZebC4ISsLmMm9dvbWMFVHYCUe1d5rwkmhS3QYiMwKTMeNH%2FM%2ByJtZw1ZX9oIwDqbLia4HRw2ud9nIqD4S9dvIsiGUKieEgjDRY99Nvo%3D; cookiesession1=3D6E3BA9PUMYBFJJNDDXWXIZ4JQCF423
+
+2018-05-21 17:08:15,388 - INFO - slot: 114.242.119.194 | conc: 1 | delay: 3000 ms (+0) | latency:  126 ms | size: 53212 bytes
+2018-05-21 17:08:15,388 - DEBUG - Received cookies from: <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+Set-Cookie: ObSSOCookie=E591Y4S9GziBPkmNbqJsTUpo3%2B0CFTHOvhufovHV9J4EOuczmDNz7ci5TaZ%2BzfjRnuzXMsIkrKa%2BZ%2FGrvF%2BwO416G%2BnaguF7Gu4VMLyo%2BG7DH7vhyY2sjP4cGhpfPs0Kz%2Fz%2BRyswcAaTLWmUquIJ00lt9bMQRaojlkSAqQ6f0LSb3gyw9M1q1BPCgsO%2Fu408Vl2gf9IyD2XSz8h322JwLDMkaSLwTeq9xjuhOAp2GPdvPHA9mFqbCowN%2FvtYpKuoJ9Osfw3ikrTKi%2FfAMgYaMOUPx8Zfh9Z65ktk5%2FhHAlA%3D; path=/;
+
+2018-05-21 17:08:15,390 - DEBUG - Crawled (200) <POST http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action> (referer: http://114.242.119.194:9714/login/login.html)
+2018-05-21 17:08:15,493 - INFO - parse post data: {'areaId': '414', 'hallId': '414001', 'proId': '6'}
+2018-05-21 17:08:15,494 - INFO - item data: {'areaId': '414',
+ 'areaName': '\xe6\x9c\xac\xe6\xba\xaa\xe5\xb8\x82',
+ 'hallId': '414003',
+ 'hallName': '\xe8\xbe\xbd\xe5\xae\x81\xe7\x9c\x81\xe6\x9c\xac\xe6\xba\xaa\xe5\xb8\x82\xe6\xa1\x93\xe4\xbb\x81\xe5\x8e\xbf\xe9\x95\xbf\xe6\xb1\x9f\xe5\xa4\xa7\xe8\xa1\x97',
+ 'proId': '6',
+ 'proName': '\xe8\xbe\xbd\xe5\xae\x81'}
+2018-05-21 17:08:15,496 - DEBUG - Scraped from <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+6
+2018-05-21 17:08:15,496 - INFO - item data: {'areaId': '414',
+ 'areaName': '\xe6\x9c\xac\xe6\xba\xaa\xe5\xb8\x82',
+ 'hallId': '414001',
+ 'hallName': '\xe8\xbe\xbd\xe5\xae\x81\xe7\x9c\x81\xe6\x9c\xac\xe6\xba\xaa\xe5\xb8\x82\xe5\x8f\x8b\xe8\xb0\x8a\xe8\xa1\x97',
+ 'proId': '6',
+ 'proName': '\xe8\xbe\xbd\xe5\xae\x81'}
+2018-05-21 17:08:15,497 - DEBUG - Scraped from <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+6
+2018-05-21 17:08:15,497 - INFO - item data: {'areaId': '414',
+ 'areaName': '\xe6\x9c\xac\xe6\xba\xaa\xe5\xb8\x82',
+ 'hallId': '414002',
+ 'hallName': '\xe8\xbe\xbd\xe5\xae\x81\xe7\x9c\x81\xe6\x9c\xac\xe6\xba\xaa\xe5\xb8\x82\xe5\xbb\xba\xe5\xb7\xa5\xe8\xa1\x97',
+ 'proId': '6',
+ 'proName': '\xe8\xbe\xbd\xe5\xae\x81'}
+2018-05-21 17:08:15,499 - DEBUG - Scraped from <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+6
+2018-05-21 17:08:15,500 - INFO - item data: {'areaId': '414',
+ 'areaName': '\xe6\x9c\xac\xe6\xba\xaa\xe5\xb8\x82',
+ 'hallId': '414004',
+ 'hallName': '\xe8\xbe\xbd\xe5\xae\x81\xe7\x9c\x81\xe6\x9c\xac\xe6\xba\xaa\xe5\xb8\x82\xe9\x93\xb6\xe4\xba\xbf\xe5\xae\xb6\xe5\x9b\xad',
+ 'proId': '6',
+ 'proName': '\xe8\xbe\xbd\xe5\xae\x81'}
+2018-05-21 17:08:15,500 - DEBUG - Scraped from <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+6
+2018-05-21 17:08:19,358 - INFO - slot: 114.242.119.194 | conc: 1 | delay: 3000 ms (+0) | latency:   18 ms | size:     0 bytes
+2018-05-21 17:08:19,358 - DEBUG - Received cookies from: <302 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+Set-Cookie: ObSSOCookie=aMQXKwWntkn6U2FnRKTgKSEDxmXoi95geu84AQIqU4miyPQ2CPKaqNDjpcUO%2Fd8MAwiWFYsvhXDr1vKSh3p732n%2F5HJdysV28WTaHvo90cTLWkD%2FngSUAY4oY4nQ45Dp8Cz7c4vVJ%2FSAtFrBcUX1DvMoz7iyqJNoeuiZgp7O8m0Bx11JleUZiHD3AtE4XOC4mbUtzM1K%2FmXPt%2B8Gy9qU%2FVu6%2BNkGPnoKY8cfL%2FM%2FzhM%2FZXL3KHKSjBiRy7GQQFx%2BiqHVOXnU1CXnvWPTpKCQ%2FqXTApm%2FZ5f57fUh84BxZ4g%3D; path=/;
+
+2018-05-21 17:08:19,359 - DEBUG - Redirecting (302) to <GET http://114.242.119.194:9714/infoplatform/login/loginOim.jsp> from <POST http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+2018-05-21 17:08:19,359 - DEBUG - Sending cookies to: <GET http://114.242.119.194:9714/infoplatform/login/loginOim.jsp>
+Cookie: JSESSIONID=5C31786D4EAC3BC5E58DEF31DF70F4FD.node1; ObSSOCookie=aMQXKwWntkn6U2FnRKTgKSEDxmXoi95geu84AQIqU4miyPQ2CPKaqNDjpcUO%2Fd8MAwiWFYsvhXDr1vKSh3p732n%2F5HJdysV28WTaHvo90cTLWkD%2FngSUAY4oY4nQ45Dp8Cz7c4vVJ%2FSAtFrBcUX1DvMoz7iyqJNoeuiZgp7O8m0Bx11JleUZiHD3AtE4XOC4mbUtzM1K%2FmXPt%2B8Gy9qU%2FVu6%2BNkGPnoKY8cfL%2FM%2FzhM%2FZXL3KHKSjBiRy7GQQFx%2BiqHVOXnU1CXnvWPTpKCQ%2FqXTApm%2FZ5f57fUh84BxZ4g%3D; cookiesession1=3D6E3BA9PUMYBFJJNDDXWXIZ4JQCF423
+
+2018-05-21 17:08:22,565 - INFO - slot: 114.242.119.194 | conc: 1 | delay: 3000 ms (+0) | latency:  128 ms | size: 44700 bytes
+2018-05-21 17:08:22,566 - DEBUG - Received cookies from: <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+Set-Cookie: ObSSOCookie=w3jqn%2FrCjUE0BGgqaOlynJ7lRXnq97Gicj7GHLXhBTZY%2B7geACrAmCz3WHQT0vdqtXdDDudHZB%2F73iZwir%2F6I9O6dHDIkaRHy%2BMZ0w8CIT0T354eh9ltiLq2iIhCLiamtyBOM6DdbP1cdfdHT2iAJlswSrQzvT%2Fo68gQbd2PW3VKZ33Jbo1MZF0qOu5XB4CLaHLblA2Tq7V%2BJG9EBxataXh0syBNfpMbSgY%2BJpYdU4bH35Mkg4Z43TRb2huXr22wvT6oUlKLu%2B%2BI9dkB1Jzgtw%3D%3D; path=/;
+
+2018-05-21 17:08:22,566 - DEBUG - Crawled (200) <POST http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action> (referer: http://114.242.119.194:9714/login/login.html)
+2018-05-21 17:08:22,671 - INFO - parse post data: {'areaId': '416', 'hallId': '416001', 'proId': '6'}
+2018-05-21 17:08:22,671 - INFO - item data: {'areaId': '416',
+ 'areaName': '\xe9\x94\xa6\xe5\xb7\x9e\xe5\xb8\x82',
+ 'hallId': '416006',
+ 'hallName': '\xe8\xbe\xbd\xe5\xae\x81\xe7\x9c\x81\xe9\x94\xa6\xe5\xb7\x9e\xe5\xb8\x82\xe4\xb8\x8a\xe6\xb5\xb7\xe8\xb7\xaf',
+ 'proId': '6',
+ 'proName': '\xe8\xbe\xbd\xe5\xae\x81'}
+2018-05-21 17:08:22,671 - DEBUG - Scraped from <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+6
+2018-05-21 17:08:22,673 - INFO - item data: {'areaId': '416',
+ 'areaName': '\xe9\x94\xa6\xe5\xb7\x9e\xe5\xb8\x82',
+ 'hallId': '416004',
+ 'hallName': '\xe8\xbe\xbd\xe5\xae\x81\xe7\x9c\x81\xe9\x94\xa6\xe5\xb7\x9e\xe5\xb8\x82\xe6\x9c\x9d\xe9\x98\xb3\xe6\x96\xb0\xe8\xb7\xaf',
+ 'proId': '6',
+ 'proName': '\xe8\xbe\xbd\xe5\xae\x81'}
+2018-05-21 17:08:22,673 - DEBUG - Scraped from <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+6
+2018-05-21 17:08:22,674 - INFO - item data: {'areaId': '416',
+ 'areaName': '\xe9\x94\xa6\xe5\xb7\x9e\xe5\xb8\x82',
+ 'hallId': '416003',
+ 'hallName': '\xe8\xbe\xbd\xe5\xae\x81\xe7\x9c\x81\xe9\x94\xa6\xe5\xb7\x9e\xe5\xb8\x82\xe6\x88\x90\xe9\x83\xbd\xe8\xa1\x97',
+ 'proId': '6',
+ 'proName': '\xe8\xbe\xbd\xe5\xae\x81'}
+2018-05-21 17:08:22,674 - DEBUG - Scraped from <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+6
+2018-05-21 17:08:22,674 - INFO - item data: {'areaId': '416',
+ 'areaName': '\xe9\x94\xa6\xe5\xb7\x9e\xe5\xb8\x82',
+ 'hallId': '416001',
+ 'hallName': '\xe8\xbe\xbd\xe5\xae\x81\xe7\x9c\x81\xe9\x94\xa6\xe5\xb7\x9e\xe5\xb8\x82\xe5\x87\x8c\xe6\xb5\xb7\xe5\xb8\x82\xe4\xba\xba\xe6\xb0\x91\xe8\xb7\xaf',
+ 'proId': '6',
+ 'proName': '\xe8\xbe\xbd\xe5\xae\x81'}
+2018-05-21 17:08:22,676 - DEBUG - Scraped from <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+6
+2018-05-21 17:08:22,676 - INFO - item data: {'areaId': '416',
+ 'areaName': '\xe9\x94\xa6\xe5\xb7\x9e\xe5\xb8\x82',
+ 'hallId': '416002',
+ 'hallName': '\xe8\xbe\xbd\xe5\xae\x81\xe7\x9c\x81\xe9\x94\xa6\xe5\xb7\x9e\xe5\xb8\x82\xe5\x8d\xab\xe4\xb8\x9c\xe8\xa1\x97',
+ 'proId': '6',
+ 'proName': '\xe8\xbe\xbd\xe5\xae\x81'}
+2018-05-21 17:08:22,677 - DEBUG - Scraped from <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+6
+2018-05-21 17:08:22,678 - INFO - item data: {'areaId': '416',
+ 'areaName': '\xe9\x94\xa6\xe5\xb7\x9e\xe5\xb8\x82',
+ 'hallId': '416007',
+ 'hallName': '\xe8\xbe\xbd\xe5\xae\x81\xe7\x9c\x81\xe9\x94\xa6\xe5\xb7\x9e\xe5\xb8\x82\xe6\x98\x8e\xe5\xbe\xb7\xe8\xa1\x97',
+ 'proId': '6',
+ 'proName': '\xe8\xbe\xbd\xe5\xae\x81'}
+2018-05-21 17:08:22,680 - DEBUG - Scraped from <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+6
+2018-05-21 17:08:26,716 - INFO - slot: 114.242.119.194 | conc: 1 | delay: 3000 ms (+0) | latency:   18 ms | size:     0 bytes
+2018-05-21 17:08:26,716 - DEBUG - Received cookies from: <302 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+Set-Cookie: ObSSOCookie=NUVbjgnQJ6MdquMyyUz7vgZ6LN51xRaF%2FsXSK2HTrFxgHDI9r0q3OaRQ7Tv8lt5fl58E%2FK9Sc48kMkcKvsJNldPQZ9eE1Hz94P07JCdzPq89%2BNCEMHtZjPus8uhGconNtgvfzDKgP6ToGUMR%2F4LtgrZK%2Bm94FktobVhQ1a16ByRSgTQ2jkoALmtesS0fYuaeeet1eqdshS6QhtKpGlC4A6WNBUzsQdCSJtT55xBTQ8QCrWGaP4K80OMy6jPLnoUZJ%2FaJdalvzIX7BTA%2B9Fy1Kn3b6A0llCQ1qeTRgPl71Zw%3D; path=/;
+
+2018-05-21 17:08:26,717 - DEBUG - Redirecting (302) to <GET http://114.242.119.194:9714/infoplatform/login/loginOim.jsp> from <POST http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+2018-05-21 17:08:26,717 - DEBUG - Sending cookies to: <GET http://114.242.119.194:9714/infoplatform/login/loginOim.jsp>
+Cookie: JSESSIONID=5C31786D4EAC3BC5E58DEF31DF70F4FD.node1; ObSSOCookie=NUVbjgnQJ6MdquMyyUz7vgZ6LN51xRaF%2FsXSK2HTrFxgHDI9r0q3OaRQ7Tv8lt5fl58E%2FK9Sc48kMkcKvsJNldPQZ9eE1Hz94P07JCdzPq89%2BNCEMHtZjPus8uhGconNtgvfzDKgP6ToGUMR%2F4LtgrZK%2Bm94FktobVhQ1a16ByRSgTQ2jkoALmtesS0fYuaeeet1eqdshS6QhtKpGlC4A6WNBUzsQdCSJtT55xBTQ8QCrWGaP4K80OMy6jPLnoUZJ%2FaJdalvzIX7BTA%2B9Fy1Kn3b6A0llCQ1qeTRgPl71Zw%3D; cookiesession1=3D6E3BA9PUMYBFJJNDDXWXIZ4JQCF423
+
+2018-05-21 17:08:30,430 - INFO - slot: 114.242.119.194 | conc: 1 | delay: 3000 ms (+0) | latency:  120 ms | size: 52358 bytes
+2018-05-21 17:08:30,431 - DEBUG - Received cookies from: <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+Set-Cookie: ObSSOCookie=uEmo6l8NxrOoXknuiKIYFHloiJV6sLtcHlchDZ%2Boy179UT%2FlzLOQpntC8mTRnCDKhdpeqriABkuo0HDXDoWPOqFp2OVz5wCz%2BI2dMk2kkWGk9rvxbr16HJRMTVov04xCbV5shE0x0Zvc84sHrR547VKhPkmsq7Fj4eKY0HkqGE%2BvZYFuOD%2Bzo2I2WCrsX5pa6TZGbatud7RYjcKPbOPA9Vvpc9%2BnyIYDcyo8htDUPsKihm32Oz%2FwFNQaG75KZuwd3aVrQy6Z07yzDeGBlHHkdsWtCIQdwRL6DP83NcG2UPw%3D; path=/;
+
+2018-05-21 17:08:30,431 - DEBUG - Crawled (200) <POST http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action> (referer: http://114.242.119.194:9714/login/login.html)
+2018-05-21 17:08:30,539 - INFO - parse post data: {'areaId': '410', 'hallId': '410001', 'proId': '6'}
+2018-05-21 17:08:30,539 - INFO - item data: {'areaId': '410',
+ 'areaName': '\xe9\x93\x81\xe5\xb2\xad\xe5\xb8\x82',
+ 'hallId': '410002',
+ 'hallName': '\xe8\xbe\xbd\xe5\xae\x81\xe7\x9c\x81\xe9\x93\x81\xe5\xb2\xad\xe5\xb8\x82\xe9\x95\xbf\xe9\x9d\x92\xe8\xb7\xaf',
+ 'proId': '6',
+ 'proName': '\xe8\xbe\xbd\xe5\xae\x81'}
+2018-05-21 17:08:30,540 - DEBUG - Scraped from <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+6
+2018-05-21 17:08:30,540 - INFO - item data: {'areaId': '410',
+ 'areaName': '\xe9\x93\x81\xe5\xb2\xad\xe5\xb8\x82',
+ 'hallId': '410004',
+ 'hallName': '\xe8\xbe\xbd\xe5\xae\x81\xe7\x9c\x81\xe9\x93\x81\xe5\xb2\xad\xe5\xb8\x82\xe6\x96\xb0\xe5\x8d\x8e\xe8\xb7\xaf',
+ 'proId': '6',
+ 'proName': '\xe8\xbe\xbd\xe5\xae\x81'}
+2018-05-21 17:08:30,542 - DEBUG - Scraped from <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+6
+2018-05-21 17:08:30,542 - INFO - item data: {'areaId': '410',
+ 'areaName': '\xe9\x93\x81\xe5\xb2\xad\xe5\xb8\x82',
+ 'hallId': '410007',
+ 'hallName': '\xe8\xbe\xbd\xe5\xae\x81\xe7\x9c\x81\xe9\x93\x81\xe5\xb2\xad\xe5\xb8\x82\xe6\x98\x8c\xe5\x9b\xbe\xe5\x8e\xbf\xe6\xbb\xa8\xe6\xb2\xb3\xe5\x8c\x97\xe8\xb7\xaf',
+ 'proId': '6',
+ 'proName': '\xe8\xbe\xbd\xe5\xae\x81'}
+2018-05-21 17:08:30,543 - DEBUG - Scraped from <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+6
+2018-05-21 17:08:30,543 - INFO - item data: {'areaId': '410',
+ 'areaName': '\xe9\x93\x81\xe5\xb2\xad\xe5\xb8\x82',
+ 'hallId': '410005',
+ 'hallName': '\xe8\xbe\xbd\xe5\xae\x81\xe7\x9c\x81\xe9\x93\x81\xe5\xb2\xad\xe5\xb8\x82\xe5\x8d\x97\xe9\xa9\xac\xe8\xb7\xaf',
+ 'proId': '6',
+ 'proName': '\xe8\xbe\xbd\xe5\xae\x81'}
+2018-05-21 17:08:30,545 - DEBUG - Scraped from <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+6
+2018-05-21 17:08:30,546 - INFO - item data: {'areaId': '410',
+ 'areaName': '\xe9\x93\x81\xe5\xb2\xad\xe5\xb8\x82',
+ 'hallId': '410001',
+ 'hallName': '\xe8\xbe\xbd\xe5\xae\x81\xe7\x9c\x81\xe9\x93\x81\xe5\xb2\xad\xe5\xb8\x82\xe5\xb9\xbf\xe8\xa3\x95\xe8\xa1\x97',
+ 'proId': '6',
+ 'proName': '\xe8\xbe\xbd\xe5\xae\x81'}
+2018-05-21 17:08:30,546 - DEBUG - Scraped from <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+6
+2018-05-21 17:08:30,546 - INFO - item data: {'areaId': '410',
+ 'areaName': '\xe9\x93\x81\xe5\xb2\xad\xe5\xb8\x82',
+ 'hallId': '410006',
+ 'hallName': '\xe8\xbe\xbd\xe5\xae\x81\xe7\x9c\x81\xe9\x93\x81\xe5\xb2\xad\xe5\xbc\x80\xe5\x8e\x9f\xe5\xb8\x82\xe6\x96\xb0\xe5\x9f\x8e\xe8\xa1\x97',
+ 'proId': '6',
+ 'proName': '\xe8\xbe\xbd\xe5\xae\x81'}
+2018-05-21 17:08:30,548 - DEBUG - Scraped from <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+6
+2018-05-21 17:08:30,548 - INFO - item data: {'areaId': '410',
+ 'areaName': '\xe9\x93\x81\xe5\xb2\xad\xe5\xb8\x82',
+ 'hallId': '410003',
+ 'hallName': '\xe8\xbe\xbd\xe5\xae\x81\xe7\x9c\x81\xe9\x93\x81\xe5\xb2\xad\xe8\xb0\x83\xe5\x85\xb5\xe5\xb1\xb1\xe5\xb8\x82\xe6\x9c\x88\xe4\xba\xae\xe6\xb9\x96',
+ 'proId': '6',
+ 'proName': '\xe8\xbe\xbd\xe5\xae\x81'}
+2018-05-21 17:08:30,549 - DEBUG - Scraped from <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+6
+2018-05-21 17:08:33,855 - INFO - slot: 114.242.119.194 | conc: 1 | delay: 3000 ms (+0) | latency:   18 ms | size:   330 bytes
+2018-05-21 17:08:33,855 - DEBUG - Received cookies from: <200 http://114.242.119.194:9714/infoplatform/login/loginOim.jsp>
+Set-Cookie: ObSSOCookie=gf9PyiRx%2FciB13x7FwngBgKBNbql4q4PHTkIs%2FVOp1BBfHrK0SFdeNDRU9QKTVyhQQ5jxUyxeL3ZCeG5ZFYag9AlLh4sm7X1pJhiE%2Bxp8SGqUyUvWolGyPtDo4fg35j1Cum6rZqGDmPK2QCOvXryetol1Zp%2FY0%2FYXHH8wX1h3rwK8EZEUpu75RX9ker5OdzlHgFYDsn%2BNP474qw%2BBREguTfa2hY%2BRjg2VNBNUZG0F8fPU6sMoAPMfzip0Y4MjMDXvQ1BsUpLeHmbLGXjHtOJeqG1T%2BaNoc8KtKMie%2BcAx1Y%3D; path=/;
+
+2018-05-21 17:08:33,855 - DEBUG - Crawled (200) <GET http://114.242.119.194:9714/infoplatform/login/loginOim.jsp> (referer: http://114.242.119.194:9714/login/login.html)
+2018-05-21 17:08:33,957 - INFO - parse error post data: {'areaId': '419', 'hallId': '419001', 'proId': '6'}
+2018-05-21 17:08:33,957 - INFO - 419 repeat times: 2
+2018-05-21 17:08:38,960 - DEBUG - Sending cookies to: <POST http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+Cookie: JSESSIONID=5C31786D4EAC3BC5E58DEF31DF70F4FD.node1; ObSSOCookie=gf9PyiRx%2FciB13x7FwngBgKBNbql4q4PHTkIs%2FVOp1BBfHrK0SFdeNDRU9QKTVyhQQ5jxUyxeL3ZCeG5ZFYag9AlLh4sm7X1pJhiE%2Bxp8SGqUyUvWolGyPtDo4fg35j1Cum6rZqGDmPK2QCOvXryetol1Zp%2FY0%2FYXHH8wX1h3rwK8EZEUpu75RX9ker5OdzlHgFYDsn%2BNP474qw%2BBREguTfa2hY%2BRjg2VNBNUZG0F8fPU6sMoAPMfzip0Y4MjMDXvQ1BsUpLeHmbLGXjHtOJeqG1T%2BaNoc8KtKMie%2BcAx1Y%3D; cookiesession1=3D6E3BA9PUMYBFJJNDDXWXIZ4JQCF423
+
+2018-05-21 17:08:38,986 - INFO - slot: 114.242.119.194 | conc: 1 | delay: 3000 ms (+0) | latency:   26 ms | size:   330 bytes
+2018-05-21 17:08:38,986 - DEBUG - Received cookies from: <200 http://114.242.119.194:9714/infoplatform/login/loginOim.jsp>
+Set-Cookie: ObSSOCookie=TtmUJT%2F7SwY2j0EO3bFkYMlyFfY8c25ZrCWkVQZzlQKkJmKB4A0tpJfgIDxG%2FOnN3cbWlMs8qq8CMM5U%2BpuEQaAtGdAWE4rgLP%2B5jJzMVIc0WhNhZgxY%2BnpKw25XyRObK5er48uXpgdDD2xdYvE%2BprzZlX54NQZD50pvUQJs0WOGx2Exkj79Ok0oraO7PW4IHPAx6GpQELZgT7Na9o2odst6klS9KVQeu4OVp8aRU3jNWAAAUmgZ4LjHLkH%2F2Te6ClI%2BVty2mOwvcENrQfQmYIBCeuWc1UeOwT7awv1YxY8%3D; path=/;
+
+2018-05-21 17:08:38,986 - DEBUG - Crawled (200) <GET http://114.242.119.194:9714/infoplatform/login/loginOim.jsp> (referer: http://114.242.119.194:9714/login/login.html)
+2018-05-21 17:08:39,088 - INFO - parse error post data: {'areaId': '429', 'hallId': '429001', 'proId': '6'}
+2018-05-21 17:08:39,088 - INFO - 429 repeat times: 2
+2018-05-21 17:08:44,091 - DEBUG - Sending cookies to: <POST http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+Cookie: JSESSIONID=5C31786D4EAC3BC5E58DEF31DF70F4FD.node1; ObSSOCookie=TtmUJT%2F7SwY2j0EO3bFkYMlyFfY8c25ZrCWkVQZzlQKkJmKB4A0tpJfgIDxG%2FOnN3cbWlMs8qq8CMM5U%2BpuEQaAtGdAWE4rgLP%2B5jJzMVIc0WhNhZgxY%2BnpKw25XyRObK5er48uXpgdDD2xdYvE%2BprzZlX54NQZD50pvUQJs0WOGx2Exkj79Ok0oraO7PW4IHPAx6GpQELZgT7Na9o2odst6klS9KVQeu4OVp8aRU3jNWAAAUmgZ4LjHLkH%2F2Te6ClI%2BVty2mOwvcENrQfQmYIBCeuWc1UeOwT7awv1YxY8%3D; cookiesession1=3D6E3BA9PUMYBFJJNDDXWXIZ4JQCF423
+
+2018-05-21 17:08:44,115 - INFO - slot: 114.242.119.194 | conc: 1 | delay: 3000 ms (+0) | latency:   26 ms | size:   330 bytes
+2018-05-21 17:08:44,115 - DEBUG - Received cookies from: <200 http://114.242.119.194:9714/infoplatform/login/loginOim.jsp>
+Set-Cookie: ObSSOCookie=K%2FvGaSdjNanVkMr1N3RdTaSnhgN4yWgDz5V9vztDScGYEVnd5TUtB4H55a3JI%2FXHuFd0kdBkSVOy9xhjvMGcWKxu9qUdRFosmFokCCKYuRstLlcciNRg%2Fl5xQ%2F7vP1LwAfvnkDKk7qPTu6RPnBZVsnJC5RY6ifreNBcDMWSjntUE06Jg4ijMWIB6DUwBZ6H%2FnaWBhuXZBv2fqicYhHoRymNkgcgQg2pG9589fPS4j%2BR9z%2BNRz3CH6yl4F6e6FwMzLJ1ujuHql0CRA5ZstZMEPMMxyKilwcolc69k7KqHcQE%3D; path=/;
+
+2018-05-21 17:08:44,115 - DEBUG - Crawled (200) <GET http://114.242.119.194:9714/infoplatform/login/loginOim.jsp> (referer: http://114.242.119.194:9714/login/login.html)
+2018-05-21 17:08:44,217 - INFO - parse error post data: {'areaId': '024', 'hallId': '024001', 'proId': '6'}
+2018-05-21 17:08:44,217 - INFO - 024 repeat times: 2
+2018-05-21 17:08:49,220 - DEBUG - Sending cookies to: <POST http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+Cookie: JSESSIONID=5C31786D4EAC3BC5E58DEF31DF70F4FD.node1; ObSSOCookie=K%2FvGaSdjNanVkMr1N3RdTaSnhgN4yWgDz5V9vztDScGYEVnd5TUtB4H55a3JI%2FXHuFd0kdBkSVOy9xhjvMGcWKxu9qUdRFosmFokCCKYuRstLlcciNRg%2Fl5xQ%2F7vP1LwAfvnkDKk7qPTu6RPnBZVsnJC5RY6ifreNBcDMWSjntUE06Jg4ijMWIB6DUwBZ6H%2FnaWBhuXZBv2fqicYhHoRymNkgcgQg2pG9589fPS4j%2BR9z%2BNRz3CH6yl4F6e6FwMzLJ1ujuHql0CRA5ZstZMEPMMxyKilwcolc69k7KqHcQE%3D; cookiesession1=3D6E3BA9PUMYBFJJNDDXWXIZ4JQCF423
+
+2018-05-21 17:08:49,246 - INFO - slot: 114.242.119.194 | conc: 1 | delay: 3000 ms (+0) | latency:   26 ms | size:   330 bytes
+2018-05-21 17:08:49,247 - DEBUG - Received cookies from: <200 http://114.242.119.194:9714/infoplatform/login/loginOim.jsp>
+Set-Cookie: ObSSOCookie=44YjKcuBzQu%2Blrbl3Ltk%2BQC%2B6gmtMFCvyGcdjynGyzuKim1VbBmx4K3pTBVr5aaRfbX4eJDE9gGgDrZfH00DS7Vi8QU6d5jB%2F92Z6Fy15PjTaq8Nka6WDGWXfqXl6wNh6ZmIkqLNdSBo1LUBk9Ve%2BCx1Z7t5QhKfRA%2Bj7TY8jgdJrq%2Bh7igtGn%2F%2BvZMHboUrKBc78NU6HfoeHvcmywLBsiCO%2FGFyolwGeuLH7F1FiYei%2FrlrerzviAhXVmlu7gs9QcS2SAxNrAdBHQ8A0utDlw%3D%3D; path=/;
+
+2018-05-21 17:08:49,247 - DEBUG - Crawled (200) <GET http://114.242.119.194:9714/infoplatform/login/loginOim.jsp> (referer: http://114.242.119.194:9714/login/login.html)
+2018-05-21 17:08:49,348 - INFO - parse error post data: {'areaId': '421', 'hallId': '421001', 'proId': '6'}
+2018-05-21 17:08:49,349 - INFO - 421 repeat times: 2
+2018-05-21 17:08:54,352 - DEBUG - Sending cookies to: <POST http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+Cookie: JSESSIONID=5C31786D4EAC3BC5E58DEF31DF70F4FD.node1; ObSSOCookie=44YjKcuBzQu%2Blrbl3Ltk%2BQC%2B6gmtMFCvyGcdjynGyzuKim1VbBmx4K3pTBVr5aaRfbX4eJDE9gGgDrZfH00DS7Vi8QU6d5jB%2F92Z6Fy15PjTaq8Nka6WDGWXfqXl6wNh6ZmIkqLNdSBo1LUBk9Ve%2BCx1Z7t5QhKfRA%2Bj7TY8jgdJrq%2Bh7igtGn%2F%2BvZMHboUrKBc78NU6HfoeHvcmywLBsiCO%2FGFyolwGeuLH7F1FiYei%2FrlrerzviAhXVmlu7gs9QcS2SAxNrAdBHQ8A0utDlw%3D%3D; cookiesession1=3D6E3BA9PUMYBFJJNDDXWXIZ4JQCF423
+
+2018-05-21 17:08:54,375 - INFO - slot: 114.242.119.194 | conc: 1 | delay: 3000 ms (+0) | latency:   24 ms | size:   330 bytes
+2018-05-21 17:08:54,375 - DEBUG - Received cookies from: <200 http://114.242.119.194:9714/infoplatform/login/loginOim.jsp>
+Set-Cookie: ObSSOCookie=Q82%2F57DRGc1MHR7Q2VQm4277IbOK7dYEhkqTdhzoOLXuY5J8%2F1BkJKr%2FiWDhnTjMKAxcm9XJjmSbPnrKhdNHaxfuvzAFgP1axjrJ7K1wQ6Yho0mifXLd9w1JE45f8isxDYTkWX8vDaBcCRlFSlszZ63mw8ytwWIqHxX9BZDhZwFx9epf7n1sNmBxNGqGeWsQfrXQsbE%2FVT1ty69FM5U8zTLQesTl%2Bc%2BRNFd%2BMiP1M21LPiEPKQzOHhYuZNH9D8N5ZsGDUL1Vs2XtrlxeWiDc%2Fl6wfSLn5sLxoht3O%2FiSfaQ%3D; path=/;
+
+2018-05-21 17:08:54,375 - DEBUG - Crawled (200) <GET http://114.242.119.194:9714/infoplatform/login/loginOim.jsp> (referer: http://114.242.119.194:9714/login/login.html)
+2018-05-21 17:08:54,476 - INFO - parse error post data: {'areaId': '418', 'hallId': '418001', 'proId': '6'}
+2018-05-21 17:08:54,476 - INFO - 418 repeat times: 2
+2018-05-21 17:08:59,480 - DEBUG - Sending cookies to: <POST http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+Cookie: JSESSIONID=5C31786D4EAC3BC5E58DEF31DF70F4FD.node1; ObSSOCookie=Q82%2F57DRGc1MHR7Q2VQm4277IbOK7dYEhkqTdhzoOLXuY5J8%2F1BkJKr%2FiWDhnTjMKAxcm9XJjmSbPnrKhdNHaxfuvzAFgP1axjrJ7K1wQ6Yho0mifXLd9w1JE45f8isxDYTkWX8vDaBcCRlFSlszZ63mw8ytwWIqHxX9BZDhZwFx9epf7n1sNmBxNGqGeWsQfrXQsbE%2FVT1ty69FM5U8zTLQesTl%2Bc%2BRNFd%2BMiP1M21LPiEPKQzOHhYuZNH9D8N5ZsGDUL1Vs2XtrlxeWiDc%2Fl6wfSLn5sLxoht3O%2FiSfaQ%3D; cookiesession1=3D6E3BA9PUMYBFJJNDDXWXIZ4JQCF423
+
+2018-05-21 17:08:59,500 - INFO - slot: 114.242.119.194 | conc: 1 | delay: 3000 ms (+0) | latency:   20 ms | size:   330 bytes
+2018-05-21 17:08:59,500 - DEBUG - Crawled (200) <GET http://114.242.119.194:9714/infoplatform/login/loginOim.jsp> (referer: http://114.242.119.194:9714/login/login.html)
+2018-05-21 17:08:59,601 - INFO - parse error post data: {'areaId': '415', 'hallId': '415001', 'proId': '6'}
+2018-05-21 17:08:59,601 - INFO - 415 repeat times: 2
+2018-05-21 17:09:04,605 - DEBUG - Sending cookies to: <POST http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+Cookie: JSESSIONID=5C31786D4EAC3BC5E58DEF31DF70F4FD.node1; ObSSOCookie=Q82%2F57DRGc1MHR7Q2VQm4277IbOK7dYEhkqTdhzoOLXuY5J8%2F1BkJKr%2FiWDhnTjMKAxcm9XJjmSbPnrKhdNHaxfuvzAFgP1axjrJ7K1wQ6Yho0mifXLd9w1JE45f8isxDYTkWX8vDaBcCRlFSlszZ63mw8ytwWIqHxX9BZDhZwFx9epf7n1sNmBxNGqGeWsQfrXQsbE%2FVT1ty69FM5U8zTLQesTl%2Bc%2BRNFd%2BMiP1M21LPiEPKQzOHhYuZNH9D8N5ZsGDUL1Vs2XtrlxeWiDc%2Fl6wfSLn5sLxoht3O%2FiSfaQ%3D; cookiesession1=3D6E3BA9PUMYBFJJNDDXWXIZ4JQCF423
+
+2018-05-21 17:09:04,625 - INFO - slot: 114.242.119.194 | conc: 1 | delay: 3000 ms (+0) | latency:   21 ms | size:   330 bytes
+2018-05-21 17:09:04,625 - DEBUG - Crawled (200) <GET http://114.242.119.194:9714/infoplatform/login/loginOim.jsp> (referer: http://114.242.119.194:9714/login/login.html)
+2018-05-21 17:09:04,727 - INFO - parse error post data: {'areaId': '413', 'hallId': '413001', 'proId': '6'}
+2018-05-21 17:09:04,729 - INFO - 413 repeat times: 2
+2018-05-21 17:09:09,730 - DEBUG - Sending cookies to: <POST http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+Cookie: JSESSIONID=5C31786D4EAC3BC5E58DEF31DF70F4FD.node1; ObSSOCookie=Q82%2F57DRGc1MHR7Q2VQm4277IbOK7dYEhkqTdhzoOLXuY5J8%2F1BkJKr%2FiWDhnTjMKAxcm9XJjmSbPnrKhdNHaxfuvzAFgP1axjrJ7K1wQ6Yho0mifXLd9w1JE45f8isxDYTkWX8vDaBcCRlFSlszZ63mw8ytwWIqHxX9BZDhZwFx9epf7n1sNmBxNGqGeWsQfrXQsbE%2FVT1ty69FM5U8zTLQesTl%2Bc%2BRNFd%2BMiP1M21LPiEPKQzOHhYuZNH9D8N5ZsGDUL1Vs2XtrlxeWiDc%2Fl6wfSLn5sLxoht3O%2FiSfaQ%3D; cookiesession1=3D6E3BA9PUMYBFJJNDDXWXIZ4JQCF423
+
+2018-05-21 17:09:09,882 - INFO - Crawled 17 pages (at 10 pages/min), scraped 46 items (at 17 items/min)
+2018-05-21 17:09:09,907 - INFO - slot: 114.242.119.194 | conc: 1 | delay: 3000 ms (+0) | latency:  131 ms | size: 53366 bytes
+2018-05-21 17:09:09,907 - DEBUG - Crawled (200) <POST http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action> (referer: http://114.242.119.194:9714/infoplatform/login/loginOim.jsp)
+2018-05-21 17:09:10,013 - INFO - parse post data: {'areaId': '419', 'hallId': '419001', 'proId': '6'}
+2018-05-21 17:09:10,015 - INFO - item data: {'areaId': '419',
+ 'areaName': '\xe8\xbe\xbd\xe9\x98\xb3\xe5\xb8\x82',
+ 'hallId': '419005',
+ 'hallName': '\xe8\xbe\xbd\xe5\xae\x81\xe7\x9c\x81\xe8\xbe\xbd\xe9\x98\xb3\xe5\xb8\x82\xe6\x96\x87\xe5\x9c\xa3\xe8\xb7\xaf',
+ 'proId': '6',
+ 'proName': '\xe8\xbe\xbd\xe5\xae\x81'}
+2018-05-21 17:09:10,015 - DEBUG - Scraped from <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+6
+2018-05-21 17:09:10,016 - INFO - item data: {'areaId': '419',
+ 'areaName': '\xe8\xbe\xbd\xe9\x98\xb3\xe5\xb8\x82',
+ 'hallId': '419002',
+ 'hallName': '\xe8\xbe\xbd\xe5\xae\x81\xe7\x9c\x81\xe8\xbe\xbd\xe9\x98\xb3\xe5\xb8\x82\xe7\x81\xaf\xe5\xa1\x94\xe6\x96\x87\xe6\x98\x8e\xe8\xa1\x97',
+ 'proId': '6',
+ 'proName': '\xe8\xbe\xbd\xe5\xae\x81'}
+2018-05-21 17:09:10,016 - DEBUG - Scraped from <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+6
+2018-05-21 17:09:10,016 - INFO - item data: {'areaId': '419',
+ 'areaName': '\xe8\xbe\xbd\xe9\x98\xb3\xe5\xb8\x82',
+ 'hallId': '419006',
+ 'hallName': '\xe8\xbe\xbd\xe5\xae\x81\xe7\x9c\x81\xe8\xbe\xbd\xe9\x98\xb3\xe5\xb8\x82\xe4\xbd\xb0\xe4\xba\xbf\xe8\xb7\xaf',
+ 'proId': '6',
+ 'proName': '\xe8\xbe\xbd\xe5\xae\x81'}
+2018-05-21 17:09:10,017 - DEBUG - Scraped from <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+6
+2018-05-21 17:09:10,017 - INFO - item data: {'areaId': '419',
+ 'areaName': '\xe8\xbe\xbd\xe9\x98\xb3\xe5\xb8\x82',
+ 'hallId': '419003',
+ 'hallName': '\xe8\xbe\xbd\xe5\xae\x81\xe7\x9c\x81\xe8\xbe\xbd\xe9\x98\xb3\xe5\xb8\x82\xe5\xbb\xba\xe5\xae\x89\xe8\x8a\xb1\xe5\x9b\xad',
+ 'proId': '6',
+ 'proName': '\xe8\xbe\xbd\xe5\xae\x81'}
+2018-05-21 17:09:10,019 - DEBUG - Scraped from <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+6
+2018-05-21 17:09:10,019 - INFO - item data: {'areaId': '419',
+ 'areaName': '\xe8\xbe\xbd\xe9\x98\xb3\xe5\xb8\x82',
+ 'hallId': '419001',
+ 'hallName': '\xe8\xbe\xbd\xe5\xae\x81\xe7\x9c\x81\xe8\xbe\xbd\xe9\x98\xb3\xe5\xb8\x82\xe6\xb0\x91\xe4\xb8\xbb\xe8\xb7\xaf',
+ 'proId': '6',
+ 'proName': '\xe8\xbe\xbd\xe5\xae\x81'}
+2018-05-21 17:09:10,020 - DEBUG - Scraped from <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+6
+2018-05-21 17:09:10,022 - INFO - item data: {'areaId': '419',
+ 'areaName': '\xe8\xbe\xbd\xe9\x98\xb3\xe5\xb8\x82',
+ 'hallId': '419004',
+ 'hallName': '\xe8\xbe\xbd\xe5\xae\x81\xe7\x9c\x81\xe8\xbe\xbd\xe9\x98\xb3\xe5\xb8\x82\xe8\xbe\xbd\xe9\x98\xb3\xe5\x8e\xbf\xe8\x83\x9c\xe5\x88\xa9\xe8\xa1\x97',
+ 'proId': '6',
+ 'proName': '\xe8\xbe\xbd\xe5\xae\x81'}
+2018-05-21 17:09:10,023 - DEBUG - Scraped from <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+6
+2018-05-21 17:09:14,118 - INFO - slot: 114.242.119.194 | conc: 1 | delay: 3000 ms (+0) | latency:   18 ms | size:     0 bytes
+2018-05-21 17:09:14,118 - DEBUG - Redirecting (302) to <GET http://114.242.119.194:9714/infoplatform/login/loginOim.jsp> from <POST http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+2018-05-21 17:09:14,119 - DEBUG - Sending cookies to: <GET http://114.242.119.194:9714/infoplatform/login/loginOim.jsp>
+Cookie: JSESSIONID=5C31786D4EAC3BC5E58DEF31DF70F4FD.node1; ObSSOCookie=Q82%2F57DRGc1MHR7Q2VQm4277IbOK7dYEhkqTdhzoOLXuY5J8%2F1BkJKr%2FiWDhnTjMKAxcm9XJjmSbPnrKhdNHaxfuvzAFgP1axjrJ7K1wQ6Yho0mifXLd9w1JE45f8isxDYTkWX8vDaBcCRlFSlszZ63mw8ytwWIqHxX9BZDhZwFx9epf7n1sNmBxNGqGeWsQfrXQsbE%2FVT1ty69FM5U8zTLQesTl%2Bc%2BRNFd%2BMiP1M21LPiEPKQzOHhYuZNH9D8N5ZsGDUL1Vs2XtrlxeWiDc%2Fl6wfSLn5sLxoht3O%2FiSfaQ%3D; cookiesession1=3D6E3BA9PUMYBFJJNDDXWXIZ4JQCF423
+
+2018-05-21 17:09:18,598 - INFO - slot: 114.242.119.194 | conc: 1 | delay: 3000 ms (+0) | latency:  128 ms | size: 51811 bytes
+2018-05-21 17:09:18,598 - DEBUG - Crawled (200) <POST http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action> (referer: http://114.242.119.194:9714/infoplatform/login/loginOim.jsp)
+2018-05-21 17:09:18,704 - INFO - parse post data: {'areaId': '024', 'hallId': '024001', 'proId': '6'}
+2018-05-21 17:09:18,706 - INFO - item data: {'areaId': '024',
+ 'areaName': '\xe6\xb2\x88\xe9\x98\xb3\xe5\xb8\x82',
+ 'hallId': '024001',
+ 'hallName': '\xe8\xbe\xbd\xe5\xae\x81\xe7\x9c\x81\xe6\xb2\x88\xe9\x98\xb3\xe5\xb8\x82\xe5\x8d\x97\xe5\x85\xab\xe9\xa9\xac\xe8\xb7\xaf',
+ 'proId': '6',
+ 'proName': '\xe8\xbe\xbd\xe5\xae\x81'}
+2018-05-21 17:09:18,707 - DEBUG - Scraped from <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+6
+2018-05-21 17:09:18,707 - INFO - item data: {'areaId': '024',
+ 'areaName': '\xe6\xb2\x88\xe9\x98\xb3\xe5\xb8\x82',
+ 'hallId': '024011',
+ 'hallName': '\xe8\xbe\xbd\xe5\xae\x81\xe7\x9c\x81\xe6\xb2\x88\xe9\x98\xb3\xe5\xb8\x82\xe4\xba\x91\xe5\xb3\xb0\xe5\x8c\x97\xe8\xa1\x97',
+ 'proId': '6',
+ 'proName': '\xe8\xbe\xbd\xe5\xae\x81'}
+2018-05-21 17:09:18,709 - DEBUG - Scraped from <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+6
+2018-05-21 17:09:18,710 - INFO - item data: {'areaId': '024',
+ 'areaName': '\xe6\xb2\x88\xe9\x98\xb3\xe5\xb8\x82',
+ 'hallId': '024007',
+ 'hallName': '\xe8\xbe\xbd\xe5\xae\x81\xe7\x9c\x81\xe6\xb2\x88\xe9\x98\xb3\xe5\xb8\x82\xe5\xb0\x8f\xe5\x8c\x97\xe5\x85\xb3\xe8\xa1\x97',
+ 'proId': '6',
+ 'proName': '\xe8\xbe\xbd\xe5\xae\x81'}
+2018-05-21 17:09:18,710 - DEBUG - Scraped from <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+6
+2018-05-21 17:09:18,710 - INFO - item data: {'areaId': '024',
+ 'areaName': '\xe6\xb2\x88\xe9\x98\xb3\xe5\xb8\x82',
+ 'hallId': '024003',
+ 'hallName': '\xe8\xbe\xbd\xe5\xae\x81\xe7\x9c\x81\xe6\xb2\x88\xe9\x98\xb3\xe5\xb8\x82\xe8\xa5\xbf\xe5\xa1\x94\xe8\xa1\x97',
+ 'proId': '6',
+ 'proName': '\xe8\xbe\xbd\xe5\xae\x81'}
+2018-05-21 17:09:18,711 - DEBUG - Scraped from <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+6
+2018-05-21 17:09:18,713 - INFO - item data: {'areaId': '024',
+ 'areaName': '\xe6\xb2\x88\xe9\x98\xb3\xe5\xb8\x82',
+ 'hallId': '024005',
+ 'hallName': '\xe8\xbe\xbd\xe5\xae\x81\xe7\x9c\x81\xe6\xb2\x88\xe9\x98\xb3\xe5\xb8\x82\xe5\x85\xad\xe8\xb7\xaf',
+ 'proId': '6',
+ 'proName': '\xe8\xbe\xbd\xe5\xae\x81'}
+2018-05-21 17:09:18,713 - DEBUG - Scraped from <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+6
+2018-05-21 17:09:18,714 - INFO - item data: {'areaId': '024',
+ 'areaName': '\xe6\xb2\x88\xe9\x98\xb3\xe5\xb8\x82',
+ 'hallId': '024014',
+ 'hallName': '\xe8\xbe\xbd\xe5\xae\x81\xe7\x9c\x81\xe6\xb2\x88\xe9\x98\xb3\xe5\xb8\x82\xe4\xb8\x9c\xe5\x8c\x97\xe5\xa4\xa7\xe9\xa9\xac\xe8\xb7\xaf',
+ 'proId': '6',
+ 'proName': '\xe8\xbe\xbd\xe5\xae\x81'}
+2018-05-21 17:09:18,716 - DEBUG - Scraped from <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+6
+2018-05-21 17:09:18,716 - INFO - item data: {'areaId': '024',
+ 'areaName': '\xe6\xb2\x88\xe9\x98\xb3\xe5\xb8\x82',
+ 'hallId': '024009',
+ 'hallName': '\xe8\xbe\xbd\xe5\xae\x81\xe7\x9c\x81\xe6\xb2\x88\xe9\x98\xb3\xe5\xb8\x82\xe5\xa4\xaa\xe5\x8e\x9f\xe5\x8d\x97\xe8\xa1\x97',
+ 'proId': '6',
+ 'proName': '\xe8\xbe\xbd\xe5\xae\x81'}
+2018-05-21 17:09:18,717 - DEBUG - Scraped from <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+6
+2018-05-21 17:09:18,717 - INFO - item data: {'areaId': '024',
+ 'areaName': '\xe6\xb2\x88\xe9\x98\xb3\xe5\xb8\x82',
+ 'hallId': '024012',
+ 'hallName': '\xe8\xbe\xbd\xe5\xae\x81\xe7\x9c\x81\xe6\xb2\x88\xe9\x98\xb3\xe5\xb8\x82\xe6\xb8\xa4\xe6\xb5\xb7\xe8\xb7\xaf',
+ 'proId': '6',
+ 'proName': '\xe8\xbe\xbd\xe5\xae\x81'}
+2018-05-21 17:09:18,719 - DEBUG - Scraped from <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+6
+2018-05-21 17:09:18,720 - INFO - item data: {'areaId': '024',
+ 'areaName': '\xe6\xb2\x88\xe9\x98\xb3\xe5\xb8\x82',
+ 'hallId': '024004',
+ 'hallName': '\xe8\xbe\xbd\xe5\xae\x81\xe7\x9c\x81\xe6\xb2\x88\xe9\x98\xb3\xe5\xb8\x82\xe8\x8d\xaf\xe7\x8e\x8b\xe5\xba\x99\xe8\xb7\xaf',
+ 'proId': '6',
+ 'proName': '\xe8\xbe\xbd\xe5\xae\x81'}
+2018-05-21 17:09:18,720 - DEBUG - Scraped from <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+6
+2018-05-21 17:09:18,721 - INFO - item data: {'areaId': '024',
+ 'areaName': '\xe6\xb2\x88\xe9\x98\xb3\xe5\xb8\x82',
+ 'hallId': '024013',
+ 'hallName': '\xe8\xbe\xbd\xe5\xae\x81\xe7\x9c\x81\xe6\xb2\x88\xe9\x98\xb3\xe5\xb8\x82\xe9\x81\x93\xe4\xb9\x89\xe5\x8c\x97\xe5\xa4\xa7\xe8\xa1\x97',
+ 'proId': '6',
+ 'proName': '\xe8\xbe\xbd\xe5\xae\x81'}
+2018-05-21 17:09:18,723 - DEBUG - Scraped from <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+6
+2018-05-21 17:09:18,723 - INFO - item data: {'areaId': '024',
+ 'areaName': '\xe6\xb2\x88\xe9\x98\xb3\xe5\xb8\x82',
+ 'hallId': '024002',
+ 'hallName': '\xe8\xbe\xbd\xe5\xae\x81\xe7\x9c\x81\xe6\xb2\x88\xe9\x98\xb3\xe5\xb8\x82\xe6\x98\x86\xe5\xb1\xb1\xe8\xa5\xbf\xe8\xb7\xaf',
+ 'proId': '6',
+ 'proName': '\xe8\xbe\xbd\xe5\xae\x81'}
+2018-05-21 17:09:18,724 - DEBUG - Scraped from <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+6
+2018-05-21 17:09:18,726 - INFO - item data: {'areaId': '024',
+ 'areaName': '\xe6\xb2\x88\xe9\x98\xb3\xe5\xb8\x82',
+ 'hallId': '024015',
+ 'hallName': '\xe8\xbe\xbd\xe5\xae\x81\xe7\x9c\x81\xe6\xb2\x88\xe9\x98\xb3\xe5\xb8\x82\xe6\x81\x92\xe8\xbe\xbe\xe8\xb7\xaf',
+ 'proId': '6',
+ 'proName': '\xe8\xbe\xbd\xe5\xae\x81'}
+2018-05-21 17:09:18,726 - DEBUG - Scraped from <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+6
+2018-05-21 17:09:18,726 - INFO - item data: {'areaId': '024',
+ 'areaName': '\xe6\xb2\x88\xe9\x98\xb3\xe5\xb8\x82',
+ 'hallId': '024008',
+ 'hallName': '\xe8\xbe\xbd\xe5\xae\x81\xe7\x9c\x81\xe6\xb2\x88\xe9\x98\xb3\xe5\xb8\x82\xe6\x96\x87\xe5\x8c\x96\xe4\xb8\x9c\xe8\xb7\xaf',
+ 'proId': '6',
+ 'proName': '\xe8\xbe\xbd\xe5\xae\x81'}
+2018-05-21 17:09:18,726 - DEBUG - Scraped from <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+6
+2018-05-21 17:09:18,727 - INFO - item data: {'areaId': '024',
+ 'areaName': '\xe6\xb2\x88\xe9\x98\xb3\xe5\xb8\x82',
+ 'hallId': '024006',
+ 'hallName': '\xe8\xbe\xbd\xe5\xae\x81\xe7\x9c\x81\xe6\xb2\x88\xe9\x98\xb3\xe5\xb8\x82\xe5\xab\xa9\xe6\xb1\x9f\xe8\xa1\x97',
+ 'proId': '6',
+ 'proName': '\xe8\xbe\xbd\xe5\xae\x81'}
+2018-05-21 17:09:18,729 - DEBUG - Scraped from <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+6
+2018-05-21 17:09:18,729 - INFO - item data: {'areaId': '024',
+ 'areaName': '\xe6\xb2\x88\xe9\x98\xb3\xe5\xb8\x82',
+ 'hallId': '024016',
+ 'hallName': '\xe8\xbe\xbd\xe5\xae\x81\xe7\x9c\x81\xe6\xb2\x88\xe9\x98\xb3\xe5\xb8\x82\xe4\xb8\x9c\xe7\x8e\xaf\xe7\x91\x9e\xe5\xba\x9c\xe5\xb0\x8f\xe5\x8c\xba',
+ 'proId': '6',
+ 'proName': '\xe8\xbe\xbd\xe5\xae\x81'}
+2018-05-21 17:09:18,730 - DEBUG - Scraped from <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+6
+2018-05-21 17:09:18,730 - INFO - item data: {'areaId': '024',
+ 'areaName': '\xe6\xb2\x88\xe9\x98\xb3\xe5\xb8\x82',
+ 'hallId': '024010',
+ 'hallName': '\xe8\xbe\xbd\xe5\xae\x81\xe7\x9c\x81\xe6\xb2\x88\xe9\x98\xb3\xe5\xb8\x82\xe5\x8d\x97\xe4\xba\xac\xe5\x8d\x97\xe8\xa1\x97',
+ 'proId': '6',
+ 'proName': '\xe8\xbe\xbd\xe5\xae\x81'}
+2018-05-21 17:09:18,730 - DEBUG - Scraped from <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+6
+2018-05-21 17:09:21,948 - INFO - slot: 114.242.119.194 | conc: 1 | delay: 3000 ms (+0) | latency:   18 ms | size:     0 bytes
+2018-05-21 17:09:21,950 - DEBUG - Redirecting (302) to <GET http://114.242.119.194:9714/infoplatform/login/loginOim.jsp> from <POST http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+2018-05-21 17:09:21,950 - DEBUG - Sending cookies to: <GET http://114.242.119.194:9714/infoplatform/login/loginOim.jsp>
+Cookie: JSESSIONID=5C31786D4EAC3BC5E58DEF31DF70F4FD.node1; ObSSOCookie=Q82%2F57DRGc1MHR7Q2VQm4277IbOK7dYEhkqTdhzoOLXuY5J8%2F1BkJKr%2FiWDhnTjMKAxcm9XJjmSbPnrKhdNHaxfuvzAFgP1axjrJ7K1wQ6Yho0mifXLd9w1JE45f8isxDYTkWX8vDaBcCRlFSlszZ63mw8ytwWIqHxX9BZDhZwFx9epf7n1sNmBxNGqGeWsQfrXQsbE%2FVT1ty69FM5U8zTLQesTl%2Bc%2BRNFd%2BMiP1M21LPiEPKQzOHhYuZNH9D8N5ZsGDUL1Vs2XtrlxeWiDc%2Fl6wfSLn5sLxoht3O%2FiSfaQ%3D; cookiesession1=3D6E3BA9PUMYBFJJNDDXWXIZ4JQCF423
+
+2018-05-21 17:09:25,315 - INFO - slot: 114.242.119.194 | conc: 1 | delay: 3000 ms (+0) | latency:  122 ms | size: 52156 bytes
+2018-05-21 17:09:25,315 - DEBUG - Crawled (200) <POST http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action> (referer: http://114.242.119.194:9714/infoplatform/login/loginOim.jsp)
+2018-05-21 17:09:25,420 - INFO - parse post data: {'areaId': '418', 'hallId': '418001', 'proId': '6'}
+2018-05-21 17:09:25,421 - INFO - item data: {'areaId': '418',
+ 'areaName': '\xe9\x98\x9c\xe6\x96\xb0\xe5\xb8\x82',
+ 'hallId': '418004',
+ 'hallName': '\xe8\xbe\xbd\xe5\xae\x81\xe7\x9c\x81\xe9\x98\x9c\xe6\x96\xb0\xe5\xb8\x82\xe5\xbd\xb0\xe6\xad\xa6\xe5\x8e\xbf\xe4\xba\xba\xe6\xb0\x91\xe5\xa4\xa7\xe8\xa1\x97',
+ 'proId': '6',
+ 'proName': '\xe8\xbe\xbd\xe5\xae\x81'}
+2018-05-21 17:09:25,421 - DEBUG - Scraped from <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+6
+2018-05-21 17:09:25,423 - INFO - item data: {'areaId': '418',
+ 'areaName': '\xe9\x98\x9c\xe6\x96\xb0\xe5\xb8\x82',
+ 'hallId': '418001',
+ 'hallName': '\xe8\xbe\xbd\xe5\xae\x81\xe7\x9c\x81\xe9\x98\x9c\xe6\x96\xb0\xe5\xb8\x82\xe8\xa7\xa3\xe6\x94\xbe\xe5\xa4\xa7\xe8\xa1\x97',
+ 'proId': '6',
+ 'proName': '\xe8\xbe\xbd\xe5\xae\x81'}
+2018-05-21 17:09:25,423 - DEBUG - Scraped from <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+6
+2018-05-21 17:09:25,424 - INFO - item data: {'areaId': '418',
+ 'areaName': '\xe9\x98\x9c\xe6\x96\xb0\xe5\xb8\x82',
+ 'hallId': '418003',
+ 'hallName': '\xe8\xbe\xbd\xe5\xae\x81\xe7\x9c\x81\xe9\x98\x9c\xe6\x96\xb0\xe5\xb8\x82\xe6\x8c\xaf\xe5\x85\xb4\xe8\xb7\xaf',
+ 'proId': '6',
+ 'proName': '\xe8\xbe\xbd\xe5\xae\x81'}
+2018-05-21 17:09:25,424 - DEBUG - Scraped from <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+6
+2018-05-21 17:09:25,424 - INFO - item data: {'areaId': '418',
+ 'areaName': '\xe9\x98\x9c\xe6\x96\xb0\xe5\xb8\x82',
+ 'hallId': '418002',
+ 'hallName': '\xe8\xbe\xbd\xe5\xae\x81\xe7\x9c\x81\xe9\x98\x9c\xe6\x96\xb0\xe5\xb8\x82\xe9\x98\x9c\xe6\x96\xb0\xe5\x8e\xbf\xe7\x8e\x89\xe9\xbe\x99\xe8\xb7\xaf',
+ 'proId': '6',
+ 'proName': '\xe8\xbe\xbd\xe5\xae\x81'}
+2018-05-21 17:09:25,426 - DEBUG - Scraped from <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+6
+2018-05-21 17:09:29,013 - INFO - slot: 114.242.119.194 | conc: 1 | delay: 3000 ms (+0) | latency:   18 ms | size:     0 bytes
+2018-05-21 17:09:29,013 - DEBUG - Redirecting (302) to <GET http://114.242.119.194:9714/infoplatform/login/loginOim.jsp> from <POST http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+2018-05-21 17:09:29,013 - DEBUG - Sending cookies to: <GET http://114.242.119.194:9714/infoplatform/login/loginOim.jsp>
+Cookie: JSESSIONID=5C31786D4EAC3BC5E58DEF31DF70F4FD.node1; ObSSOCookie=Q82%2F57DRGc1MHR7Q2VQm4277IbOK7dYEhkqTdhzoOLXuY5J8%2F1BkJKr%2FiWDhnTjMKAxcm9XJjmSbPnrKhdNHaxfuvzAFgP1axjrJ7K1wQ6Yho0mifXLd9w1JE45f8isxDYTkWX8vDaBcCRlFSlszZ63mw8ytwWIqHxX9BZDhZwFx9epf7n1sNmBxNGqGeWsQfrXQsbE%2FVT1ty69FM5U8zTLQesTl%2Bc%2BRNFd%2BMiP1M21LPiEPKQzOHhYuZNH9D8N5ZsGDUL1Vs2XtrlxeWiDc%2Fl6wfSLn5sLxoht3O%2FiSfaQ%3D; cookiesession1=3D6E3BA9PUMYBFJJNDDXWXIZ4JQCF423
+
+2018-05-21 17:09:33,026 - INFO - slot: 114.242.119.194 | conc: 1 | delay: 3000 ms (+0) | latency:  126 ms | size: 33792 bytes
+2018-05-21 17:09:33,026 - DEBUG - Crawled (200) <POST http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action> (referer: http://114.242.119.194:9714/infoplatform/login/loginOim.jsp)
+2018-05-21 17:09:33,131 - INFO - parse post data: {'areaId': '413', 'hallId': '413001', 'proId': '6'}
+2018-05-21 17:09:33,131 - INFO - item data: {'areaId': '413',
+ 'areaName': '\xe6\x8a\x9a\xe9\xa1\xba\xe5\xb8\x82',
+ 'hallId': '413001',
+ 'hallName': '\xe8\xbe\xbd\xe5\xae\x81\xe7\x9c\x81\xe6\x8a\x9a\xe9\xa1\xba\xe5\xb8\x82\xe7\xbb\xa5\xe5\x8c\x96\xe8\xb7\xaf',
+ 'proId': '6',
+ 'proName': '\xe8\xbe\xbd\xe5\xae\x81'}
+2018-05-21 17:09:33,131 - DEBUG - Scraped from <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+6
+2018-05-21 17:09:33,132 - INFO - item data: {'areaId': '413',
+ 'areaName': '\xe6\x8a\x9a\xe9\xa1\xba\xe5\xb8\x82',
+ 'hallId': '413006',
+ 'hallName': '\xe8\xbe\xbd\xe5\xae\x81\xe7\x9c\x81\xe6\x8a\x9a\xe9\xa1\xba\xe5\xb8\x82\xe4\xb8\xb4\xe6\xb1\x9f\xe4\xb8\x9c\xe8\xb7\xaf',
+ 'proId': '6',
+ 'proName': '\xe8\xbe\xbd\xe5\xae\x81'}
+2018-05-21 17:09:33,134 - DEBUG - Scraped from <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+6
+2018-05-21 17:09:33,134 - INFO - item data: {'areaId': '413',
+ 'areaName': '\xe6\x8a\x9a\xe9\xa1\xba\xe5\xb8\x82',
+ 'hallId': '413005',
+ 'hallName': '\xe8\xbe\xbd\xe5\xae\x81\xe7\x9c\x81\xe6\x8a\x9a\xe9\xa1\xba\xe5\xb8\x82\xe6\xb8\x85\xe5\x8e\x9f\xe5\x8e\xbf\xe6\xa1\xa5\xe4\xb8\x9c\xe8\xa1\x97',
+ 'proId': '6',
+ 'proName': '\xe8\xbe\xbd\xe5\xae\x81'}
+2018-05-21 17:09:33,134 - DEBUG - Scraped from <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+6
+2018-05-21 17:09:33,134 - INFO - item data: {'areaId': '413',
+ 'areaName': '\xe6\x8a\x9a\xe9\xa1\xba\xe5\xb8\x82',
+ 'hallId': '413002',
+ 'hallName': '\xe8\xbe\xbd\xe5\xae\x81\xe7\x9c\x81\xe6\x8a\x9a\xe9\xa1\xba\xe5\xb8\x82\xe6\x96\xb0\xe5\x8d\x8e\xe5\xa4\xa7\xe8\xa1\x97',
+ 'proId': '6',
+ 'proName': '\xe8\xbe\xbd\xe5\xae\x81'}
+2018-05-21 17:09:33,135 - DEBUG - Scraped from <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+6
+2018-05-21 17:09:33,135 - INFO - item data: {'areaId': '413',
+ 'areaName': '\xe6\x8a\x9a\xe9\xa1\xba\xe5\xb8\x82',
+ 'hallId': '413004',
+ 'hallName': '\xe8\xbe\xbd\xe5\xae\x81\xe7\x9c\x81\xe6\x8a\x9a\xe9\xa1\xba\xe5\xb8\x82\xe6\x96\xb0\xe6\x8a\x9a',
+ 'proId': '6',
+ 'proName': '\xe8\xbe\xbd\xe5\xae\x81'}
+2018-05-21 17:09:33,137 - DEBUG - Scraped from <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+6
+2018-05-21 17:09:33,138 - INFO - item data: {'areaId': '413',
+ 'areaName': '\xe6\x8a\x9a\xe9\xa1\xba\xe5\xb8\x82',
+ 'hallId': '413003',
+ 'hallName': '\xe8\xbe\xbd\xe5\xae\x81\xe7\x9c\x81\xe6\x8a\x9a\xe9\xa1\xba\xe5\xb8\x82\xe5\x8f\xb0\xe5\xae\x89\xe8\xa1\x97',
+ 'proId': '6',
+ 'proName': '\xe8\xbe\xbd\xe5\xae\x81'}
+2018-05-21 17:09:33,138 - DEBUG - Scraped from <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+6
+2018-05-21 17:09:37,375 - INFO - slot: 114.242.119.194 | conc: 1 | delay: 3000 ms (+0) | latency:   16 ms | size:   330 bytes
+2018-05-21 17:09:37,375 - DEBUG - Crawled (200) <GET http://114.242.119.194:9714/infoplatform/login/loginOim.jsp> (referer: http://114.242.119.194:9714/infoplatform/login/loginOim.jsp)
+2018-05-21 17:09:37,477 - INFO - parse error post data: {'areaId': '429', 'hallId': '429001', 'proId': '6'}
+2018-05-21 17:09:37,477 - INFO - 429 repeat times: 3
+2018-05-21 17:09:42,480 - DEBUG - Sending cookies to: <POST http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+Cookie: JSESSIONID=5C31786D4EAC3BC5E58DEF31DF70F4FD.node1; ObSSOCookie=Q82%2F57DRGc1MHR7Q2VQm4277IbOK7dYEhkqTdhzoOLXuY5J8%2F1BkJKr%2FiWDhnTjMKAxcm9XJjmSbPnrKhdNHaxfuvzAFgP1axjrJ7K1wQ6Yho0mifXLd9w1JE45f8isxDYTkWX8vDaBcCRlFSlszZ63mw8ytwWIqHxX9BZDhZwFx9epf7n1sNmBxNGqGeWsQfrXQsbE%2FVT1ty69FM5U8zTLQesTl%2Bc%2BRNFd%2BMiP1M21LPiEPKQzOHhYuZNH9D8N5ZsGDUL1Vs2XtrlxeWiDc%2Fl6wfSLn5sLxoht3O%2FiSfaQ%3D; cookiesession1=3D6E3BA9PUMYBFJJNDDXWXIZ4JQCF423
+
+2018-05-21 17:09:42,523 - INFO - slot: 114.242.119.194 | conc: 1 | delay: 3000 ms (+0) | latency:   42 ms | size:   330 bytes
+2018-05-21 17:09:42,523 - DEBUG - Received cookies from: <200 http://114.242.119.194:9714/infoplatform/login/loginOim.jsp>
+Set-Cookie: ObSSOCookie=fjfXeZL7NFEm2tNgZN%2BtcMm%2F799pWXVhuklxAs4Ob03b%2FsIt71hziTEcD8T7eDXPXuwhYur98mhvL2APxAjbnw4%2FavPtllyXCx6Rc4Nji8LO4JoJGAV%2FC5FXcLIX6vfMtEWEU4fqq8jM5ZtBgo2V4D89XCh%2BfC9E9xLz47YEPTjH90mPxDhHbDUz6sHZ2zmdFisDGKZ1F6q8iAGr%2FJ26j5C%2FjEe8AyzpIgYHzaBpR6Z1NDjyuiyvIjnj0zyYUoLu3sQUm0r1KBHTCQCbA7aoF06o6U7GZOAsPpgVIE%2FGnMw%3D; path=/;
+
+2018-05-21 17:09:42,523 - DEBUG - Crawled (200) <GET http://114.242.119.194:9714/infoplatform/login/loginOim.jsp> (referer: http://114.242.119.194:9714/infoplatform/login/loginOim.jsp)
+2018-05-21 17:09:42,625 - INFO - parse error post data: {'areaId': '421', 'hallId': '421001', 'proId': '6'}
+2018-05-21 17:09:42,625 - INFO - 421 repeat times: 3
+2018-05-21 17:09:47,630 - DEBUG - Sending cookies to: <POST http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+Cookie: JSESSIONID=5C31786D4EAC3BC5E58DEF31DF70F4FD.node1; ObSSOCookie=fjfXeZL7NFEm2tNgZN%2BtcMm%2F799pWXVhuklxAs4Ob03b%2FsIt71hziTEcD8T7eDXPXuwhYur98mhvL2APxAjbnw4%2FavPtllyXCx6Rc4Nji8LO4JoJGAV%2FC5FXcLIX6vfMtEWEU4fqq8jM5ZtBgo2V4D89XCh%2BfC9E9xLz47YEPTjH90mPxDhHbDUz6sHZ2zmdFisDGKZ1F6q8iAGr%2FJ26j5C%2FjEe8AyzpIgYHzaBpR6Z1NDjyuiyvIjnj0zyYUoLu3sQUm0r1KBHTCQCbA7aoF06o6U7GZOAsPpgVIE%2FGnMw%3D; cookiesession1=3D6E3BA9PUMYBFJJNDDXWXIZ4JQCF423
+
+2018-05-21 17:09:47,657 - INFO - slot: 114.242.119.194 | conc: 1 | delay: 3000 ms (+0) | latency:   29 ms | size:   330 bytes
+2018-05-21 17:09:47,657 - DEBUG - Received cookies from: <200 http://114.242.119.194:9714/infoplatform/login/loginOim.jsp>
+Set-Cookie: ObSSOCookie=KC3BK7QZrxEblbgDcsAVsFCqhxYqjHL52y%2Fbr3NJYpy6bMqMlU6v%2F%2FTKWR2%2FtnyW6H5h0oGvakwthoi7JPNqV2lkdofTjors6oiqCjnHoW69%2FQBhvOzIO4iNxv5wl%2B%2BtNbTs0xUON216zv7%2FDMbDfiGIvzuRakVLiXbHywhdd6LAjzc%2BtTap211tAlIOVBPL3Nof%2FbcYXWupLIGV13nV8pKhAti7Nzx0SUH5PrLIxLjT4RfYljP2ph5RYdgyDCVGKd4eIesrjxDq9k3wt8e5uH6zhhiH9Z2HwFz1XHaUCTQ%3D; path=/;
+
+2018-05-21 17:09:47,657 - DEBUG - Crawled (200) <GET http://114.242.119.194:9714/infoplatform/login/loginOim.jsp> (referer: http://114.242.119.194:9714/infoplatform/login/loginOim.jsp)
+2018-05-21 17:09:47,759 - INFO - parse error post data: {'areaId': '415', 'hallId': '415001', 'proId': '6'}
+2018-05-21 17:09:47,759 - INFO - 415 repeat times: 3
+2018-05-21 17:09:52,763 - DEBUG - Sending cookies to: <POST http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+Cookie: JSESSIONID=5C31786D4EAC3BC5E58DEF31DF70F4FD.node1; ObSSOCookie=KC3BK7QZrxEblbgDcsAVsFCqhxYqjHL52y%2Fbr3NJYpy6bMqMlU6v%2F%2FTKWR2%2FtnyW6H5h0oGvakwthoi7JPNqV2lkdofTjors6oiqCjnHoW69%2FQBhvOzIO4iNxv5wl%2B%2BtNbTs0xUON216zv7%2FDMbDfiGIvzuRakVLiXbHywhdd6LAjzc%2BtTap211tAlIOVBPL3Nof%2FbcYXWupLIGV13nV8pKhAti7Nzx0SUH5PrLIxLjT4RfYljP2ph5RYdgyDCVGKd4eIesrjxDq9k3wt8e5uH6zhhiH9Z2HwFz1XHaUCTQ%3D; cookiesession1=3D6E3BA9PUMYBFJJNDDXWXIZ4JQCF423
+
+2018-05-21 17:09:52,789 - INFO - slot: 114.242.119.194 | conc: 1 | delay: 3000 ms (+0) | latency:   28 ms | size:     0 bytes
+2018-05-21 17:09:52,789 - DEBUG - Received cookies from: <302 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+Set-Cookie: ObSSOCookie=tkYhgAVLXxL2%2Fetq2owHuxAWC0Yx7TI%2Fyf8nNFeH%2BOr9CIY%2BpvFvbAcg7GSj9WhDPrkJFYx0VBuR3RPZnsvjD6hUHldJqt%2BGl5pvo4KzjeBATOlZbKdzM33pT%2FVn9J8TChWT011qWdYbVXhVeHAr%2FCI43guvO2gdsGZVgdnZZSPYgXEsroIdfZpagenQUID%2B5xr7yE%2FzKmbxphnpxs89NGpZBGkEBUvpFSYEekHZ7kSk6M%2BWzbI8RD1fLJzWLmzQcDxcBkmUEOPAfXOKUmTviA7Xg5e%2Fs5iU9qxThp4SwPk%3D; path=/;
+
+2018-05-21 17:09:52,789 - DEBUG - Redirecting (302) to <GET http://114.242.119.194:9714/infoplatform/login/loginOim.jsp> from <POST http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+2018-05-21 17:09:52,789 - DEBUG - Sending cookies to: <GET http://114.242.119.194:9714/infoplatform/login/loginOim.jsp>
+Cookie: JSESSIONID=5C31786D4EAC3BC5E58DEF31DF70F4FD.node1; ObSSOCookie=tkYhgAVLXxL2%2Fetq2owHuxAWC0Yx7TI%2Fyf8nNFeH%2BOr9CIY%2BpvFvbAcg7GSj9WhDPrkJFYx0VBuR3RPZnsvjD6hUHldJqt%2BGl5pvo4KzjeBATOlZbKdzM33pT%2FVn9J8TChWT011qWdYbVXhVeHAr%2FCI43guvO2gdsGZVgdnZZSPYgXEsroIdfZpagenQUID%2B5xr7yE%2FzKmbxphnpxs89NGpZBGkEBUvpFSYEekHZ7kSk6M%2BWzbI8RD1fLJzWLmzQcDxcBkmUEOPAfXOKUmTviA7Xg5e%2Fs5iU9qxThp4SwPk%3D; cookiesession1=3D6E3BA9PUMYBFJJNDDXWXIZ4JQCF423
+
+2018-05-21 17:09:56,687 - INFO - slot: 114.242.119.194 | conc: 1 | delay: 3000 ms (+0) | latency:  138 ms | size: 42647 bytes
+2018-05-21 17:09:56,687 - DEBUG - Crawled (200) <POST http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action> (referer: http://114.242.119.194:9714/infoplatform/login/loginOim.jsp)
+2018-05-21 17:09:56,792 - INFO - parse post data: {'areaId': '421', 'hallId': '421001', 'proId': '6'}
+2018-05-21 17:09:56,793 - INFO - item data: {'areaId': '421',
+ 'areaName': '\xe6\x9c\x9d\xe9\x98\xb3\xe5\xb8\x82',
+ 'hallId': '421003',
+ 'hallName': '\xe8\xbe\xbd\xe5\xae\x81\xe7\x9c\x81\xe6\x9c\x9d\xe9\x98\xb3\xe5\x87\x8c\xe6\xba\x90\xe5\xb8\x82\xe5\x8d\x8e\xe9\x98\xb3\xe5\xb0\x8f\xe5\x8c\xba',
+ 'proId': '6',
+ 'proName': '\xe8\xbe\xbd\xe5\xae\x81'}
+2018-05-21 17:09:56,795 - DEBUG - Scraped from <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+6
+2018-05-21 17:09:56,796 - INFO - item data: {'areaId': '421',
+ 'areaName': '\xe6\x9c\x9d\xe9\x98\xb3\xe5\xb8\x82',
+ 'hallId': '421006',
+ 'hallName': '\xe8\xbe\xbd\xe5\xae\x81\xe7\x9c\x81\xe6\x9c\x9d\xe9\x98\xb3\xe5\xb8\x82\xe5\x96\x80\xe5\xb7\xa6\xe5\x8e\xbf\xe9\x9d\x92\xe5\xb9\xb4\xe8\xa1\x97',
+ 'proId': '6',
+ 'proName': '\xe8\xbe\xbd\xe5\xae\x81'}
+2018-05-21 17:09:56,796 - DEBUG - Scraped from <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+6
+2018-05-21 17:09:56,798 - INFO - item data: {'areaId': '421',
+ 'areaName': '\xe6\x9c\x9d\xe9\x98\xb3\xe5\xb8\x82',
+ 'hallId': '421001',
+ 'hallName': '\xe8\xbe\xbd\xe5\xae\x81\xe7\x9c\x81\xe6\x9c\x9d\xe9\x98\xb3\xe5\xb8\x82\xe9\xbe\x99\xe5\xb1\xb1\xe8\xa1\x97',
+ 'proId': '6',
+ 'proName': '\xe8\xbe\xbd\xe5\xae\x81'}
+2018-05-21 17:09:56,799 - DEBUG - Scraped from <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+6
+2018-05-21 17:09:56,799 - INFO - item data: {'areaId': '421',
+ 'areaName': '\xe6\x9c\x9d\xe9\x98\xb3\xe5\xb8\x82',
+ 'hallId': '421007',
+ 'hallName': '\xe8\xbe\xbd\xe5\xae\x81\xe7\x9c\x81\xe6\x9c\x9d\xe9\x98\xb3\xe5\xb8\x82\xe6\x9c\x9d\xe9\x98\xb3\xe5\x8e\xbf\xe9\xbe\x99\xe5\xb1\xb1\xe5\x8c\x97\xe8\xb7\xaf',
+ 'proId': '6',
+ 'proName': '\xe8\xbe\xbd\xe5\xae\x81'}
+2018-05-21 17:09:56,799 - DEBUG - Scraped from <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+6
+2018-05-21 17:09:56,801 - INFO - item data: {'areaId': '421',
+ 'areaName': '\xe6\x9c\x9d\xe9\x98\xb3\xe5\xb8\x82',
+ 'hallId': '421002',
+ 'hallName': '\xe8\xbe\xbd\xe5\xae\x81\xe7\x9c\x81\xe6\x9c\x9d\xe9\x98\xb3\xe5\xb8\x82\xe5\x8d\x8e\xe5\xba\x9c\xe4\xb8\x87\xe5\x9b\xbd\xe5\xa4\xa7\xe9\xa5\xad\xe5\xba\x97',
+ 'proId': '6',
+ 'proName': '\xe8\xbe\xbd\xe5\xae\x81'}
+2018-05-21 17:09:56,802 - DEBUG - Scraped from <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+6
+2018-05-21 17:09:56,802 - INFO - item data: {'areaId': '421',
+ 'areaName': '\xe6\x9c\x9d\xe9\x98\xb3\xe5\xb8\x82',
+ 'hallId': '421005',
+ 'hallName': '\xe8\xbe\xbd\xe5\xae\x81\xe7\x9c\x81\xe6\x9c\x9d\xe9\x98\xb3\xe5\x8c\x97\xe7\xa5\xa8\xe5\xb8\x82\xe9\x9d\x92\xe5\xb9\xb4\xe8\xb7\xaf',
+ 'proId': '6',
+ 'proName': '\xe8\xbe\xbd\xe5\xae\x81'}
+2018-05-21 17:09:56,803 - DEBUG - Scraped from <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+6
+2018-05-21 17:09:56,805 - INFO - item data: {'areaId': '421',
+ 'areaName': '\xe6\x9c\x9d\xe9\x98\xb3\xe5\xb8\x82',
+ 'hallId': '421004',
+ 'hallName': '\xe8\xbe\xbd\xe5\xae\x81\xe7\x9c\x81\xe6\x9c\x9d\xe9\x98\xb3\xe5\xb8\x82\xe5\xbb\xba\xe5\xb9\xb3\xe5\x8e\xbf\xe4\xba\x8c\xe4\xb8\x80\xe9\x9b\xb6\xe5\xb0\x8f\xe5\x8c\xba',
+ 'proId': '6',
+ 'proName': '\xe8\xbe\xbd\xe5\xae\x81'}
+2018-05-21 17:09:56,805 - DEBUG - Scraped from <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+6
+2018-05-21 17:10:01,155 - INFO - slot: 114.242.119.194 | conc: 1 | delay: 3000 ms (+0) | latency:  112 ms | size: 53299 bytes
+2018-05-21 17:10:01,157 - DEBUG - Crawled (200) <POST http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action> (referer: http://114.242.119.194:9714/infoplatform/login/loginOim.jsp)
+2018-05-21 17:10:01,263 - INFO - parse post data: {'areaId': '415', 'hallId': '415001', 'proId': '6'}
+2018-05-21 17:10:01,263 - INFO - item data: {'areaId': '415',
+ 'areaName': '\xe4\xb8\xb9\xe4\xb8\x9c\xe5\xb8\x82',
+ 'hallId': '415002',
+ 'hallName': '\xe8\xbe\xbd\xe5\xae\x81\xe7\x9c\x81\xe4\xb8\xb9\xe4\xb8\x9c\xe5\xb8\x82\xe5\x8e\xbf\xe5\x89\x8d\xe8\xa1\x97',
+ 'proId': '6',
+ 'proName': '\xe8\xbe\xbd\xe5\xae\x81'}
+2018-05-21 17:10:01,263 - DEBUG - Scraped from <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+6
+2018-05-21 17:10:01,265 - INFO - item data: {'areaId': '415',
+ 'areaName': '\xe4\xb8\xb9\xe4\xb8\x9c\xe5\xb8\x82',
+ 'hallId': '415001',
+ 'hallName': '\xe8\xbe\xbd\xe5\xae\x81\xe7\x9c\x81\xe4\xb8\xb9\xe4\xb8\x9c\xe5\xb8\x82\xe9\x9d\x92\xe5\xb9\xb4\xe5\xa4\xa7\xe8\xa1\x97\xe6\xb2\xb3\xe7\x95\x94\xe8\x8a\xb1\xe5\x9b\xad',
+ 'proId': '6',
+ 'proName': '\xe8\xbe\xbd\xe5\xae\x81'}
+2018-05-21 17:10:01,265 - DEBUG - Scraped from <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+6
+2018-05-21 17:10:01,266 - INFO - item data: {'areaId': '415',
+ 'areaName': '\xe4\xb8\xb9\xe4\xb8\x9c\xe5\xb8\x82',
+ 'hallId': '415004',
+ 'hallName': '\xe8\xbe\xbd\xe5\xae\x81\xe7\x9c\x81\xe4\xb8\xb9\xe4\xb8\x9c\xe5\xb8\x82\xe4\xb8\x9c\xe6\xb8\xaf\xe5\xb8\x82\xe4\xba\xba\xe6\xb0\x91\xe5\xa4\xa7\xe8\xa1\x97',
+ 'proId': '6',
+ 'proName': '\xe8\xbe\xbd\xe5\xae\x81'}
+2018-05-21 17:10:01,266 - DEBUG - Scraped from <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+6
+2018-05-21 17:10:01,266 - INFO - item data: {'areaId': '415',
+ 'areaName': '\xe4\xb8\xb9\xe4\xb8\x9c\xe5\xb8\x82',
+ 'hallId': '415003',
+ 'hallName': '\xe8\xbe\xbd\xe5\xae\x81\xe7\x9c\x81\xe4\xb8\xb9\xe4\xb8\x9c\xe5\xb8\x82\xe5\xae\xbd\xe7\x94\xb8\xe5\x8e\xbf\xe6\x96\xb0\xe5\x85\xb4\xe4\xb8\x9c\xe8\xa1\x97',
+ 'proId': '6',
+ 'proName': '\xe8\xbe\xbd\xe5\xae\x81'}
+2018-05-21 17:10:01,267 - DEBUG - Scraped from <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+6
+2018-05-21 17:10:03,812 - INFO - slot: 114.242.119.194 | conc: 1 | delay: 3000 ms (+0) | latency:   18 ms | size:   330 bytes
+2018-05-21 17:10:03,812 - DEBUG - Crawled (200) <GET http://114.242.119.194:9714/infoplatform/login/loginOim.jsp> (referer: http://114.242.119.194:9714/infoplatform/login/loginOim.jsp)
+2018-05-21 17:10:03,914 - INFO - parse error post data: {'areaId': '429', 'hallId': '429001', 'proId': '6'}
+2018-05-21 17:10:03,914 - INFO - 429 repeat times: 4
+2018-05-21 17:10:08,917 - DEBUG - Sending cookies to: <POST http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+Cookie: JSESSIONID=5C31786D4EAC3BC5E58DEF31DF70F4FD.node1; ObSSOCookie=tkYhgAVLXxL2%2Fetq2owHuxAWC0Yx7TI%2Fyf8nNFeH%2BOr9CIY%2BpvFvbAcg7GSj9WhDPrkJFYx0VBuR3RPZnsvjD6hUHldJqt%2BGl5pvo4KzjeBATOlZbKdzM33pT%2FVn9J8TChWT011qWdYbVXhVeHAr%2FCI43guvO2gdsGZVgdnZZSPYgXEsroIdfZpagenQUID%2B5xr7yE%2FzKmbxphnpxs89NGpZBGkEBUvpFSYEekHZ7kSk6M%2BWzbI8RD1fLJzWLmzQcDxcBkmUEOPAfXOKUmTviA7Xg5e%2Fs5iU9qxThp4SwPk%3D; cookiesession1=3D6E3BA9PUMYBFJJNDDXWXIZ4JQCF423
+
+2018-05-21 17:10:08,943 - INFO - slot: 114.242.119.194 | conc: 1 | delay: 3000 ms (+0) | latency:   26 ms | size:     0 bytes
+2018-05-21 17:10:08,944 - DEBUG - Redirecting (302) to <GET http://114.242.119.194:9714/infoplatform/login/loginOim.jsp> from <POST http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+2018-05-21 17:10:08,944 - DEBUG - Sending cookies to: <GET http://114.242.119.194:9714/infoplatform/login/loginOim.jsp>
+Cookie: JSESSIONID=5C31786D4EAC3BC5E58DEF31DF70F4FD.node1; ObSSOCookie=tkYhgAVLXxL2%2Fetq2owHuxAWC0Yx7TI%2Fyf8nNFeH%2BOr9CIY%2BpvFvbAcg7GSj9WhDPrkJFYx0VBuR3RPZnsvjD6hUHldJqt%2BGl5pvo4KzjeBATOlZbKdzM33pT%2FVn9J8TChWT011qWdYbVXhVeHAr%2FCI43guvO2gdsGZVgdnZZSPYgXEsroIdfZpagenQUID%2B5xr7yE%2FzKmbxphnpxs89NGpZBGkEBUvpFSYEekHZ7kSk6M%2BWzbI8RD1fLJzWLmzQcDxcBkmUEOPAfXOKUmTviA7Xg5e%2Fs5iU9qxThp4SwPk%3D; cookiesession1=3D6E3BA9PUMYBFJJNDDXWXIZ4JQCF423
+
+2018-05-21 17:10:09,881 - INFO - Crawled 27 pages (at 10 pages/min), scraped 89 items (at 43 items/min)
+2018-05-21 17:10:12,365 - INFO - slot: 114.242.119.194 | conc: 1 | delay: 3000 ms (+0) | latency:   16 ms | size:   330 bytes
+2018-05-21 17:10:12,365 - DEBUG - Crawled (200) <GET http://114.242.119.194:9714/infoplatform/login/loginOim.jsp> (referer: http://114.242.119.194:9714/infoplatform/login/loginOim.jsp)
+2018-05-21 17:10:12,467 - INFO - parse error post data: {'areaId': '429', 'hallId': '429001', 'proId': '6'}
+2018-05-21 17:10:12,467 - INFO - 429 repeat times: 5
+2018-05-21 17:10:17,470 - DEBUG - Sending cookies to: <POST http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+Cookie: JSESSIONID=5C31786D4EAC3BC5E58DEF31DF70F4FD.node1; ObSSOCookie=tkYhgAVLXxL2%2Fetq2owHuxAWC0Yx7TI%2Fyf8nNFeH%2BOr9CIY%2BpvFvbAcg7GSj9WhDPrkJFYx0VBuR3RPZnsvjD6hUHldJqt%2BGl5pvo4KzjeBATOlZbKdzM33pT%2FVn9J8TChWT011qWdYbVXhVeHAr%2FCI43guvO2gdsGZVgdnZZSPYgXEsroIdfZpagenQUID%2B5xr7yE%2FzKmbxphnpxs89NGpZBGkEBUvpFSYEekHZ7kSk6M%2BWzbI8RD1fLJzWLmzQcDxcBkmUEOPAfXOKUmTviA7Xg5e%2Fs5iU9qxThp4SwPk%3D; cookiesession1=3D6E3BA9PUMYBFJJNDDXWXIZ4JQCF423
+
+2018-05-21 17:10:17,619 - INFO - slot: 114.242.119.194 | conc: 1 | delay: 3000 ms (+0) | latency:  123 ms | size: 37209 bytes
+2018-05-21 17:10:17,621 - DEBUG - Crawled (200) <POST http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action> (referer: http://114.242.119.194:9714/infoplatform/login/loginOim.jsp)
+2018-05-21 17:10:17,726 - INFO - parse post data: {'areaId': '429', 'hallId': '429001', 'proId': '6'}
+2018-05-21 17:10:17,726 - INFO - item data: {'areaId': '429',
+ 'areaName': '\xe8\x91\xab\xe8\x8a\xa6\xe5\xb2\x9b\xe5\xb8\x82',
+ 'hallId': '429002',
+ 'hallName': '\xe8\xbe\xbd\xe5\xae\x81\xe7\x9c\x81\xe8\x91\xab\xe8\x8a\xa6\xe5\xb2\x9b\xe5\x85\xb4\xe5\x9f\x8e\xe5\xb8\x82\xe5\xbc\x80\xe5\x8f\x91\xe5\x8c\xba',
+ 'proId': '6',
+ 'proName': '\xe8\xbe\xbd\xe5\xae\x81'}
+2018-05-21 17:10:17,727 - DEBUG - Scraped from <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+6
+2018-05-21 17:10:17,729 - INFO - item data: {'areaId': '429',
+ 'areaName': '\xe8\x91\xab\xe8\x8a\xa6\xe5\xb2\x9b\xe5\xb8\x82',
+ 'hallId': '429005',
+ 'hallName': '\xe8\xbe\xbd\xe5\xae\x81\xe7\x9c\x81\xe8\x91\xab\xe8\x8a\xa6\xe5\xb2\x9b\xe5\xb8\x82\xe6\xb5\xb7\xe6\x9c\x88\xe8\xb7\xaf',
+ 'proId': '6',
+ 'proName': '\xe8\xbe\xbd\xe5\xae\x81'}
+2018-05-21 17:10:17,730 - DEBUG - Scraped from <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+6
+2018-05-21 17:10:17,730 - INFO - item data: {'areaId': '429',
+ 'areaName': '\xe8\x91\xab\xe8\x8a\xa6\xe5\xb2\x9b\xe5\xb8\x82',
+ 'hallId': '429004',
+ 'hallName': '\xe8\xbe\xbd\xe5\xae\x81\xe7\x9c\x81\xe8\x91\xab\xe8\x8a\xa6\xe5\xb2\x9b\xe5\xb8\x82\xe9\xbe\x99\xe6\xb9\xbe\xe5\xa4\xa7\xe8\xa1\x97',
+ 'proId': '6',
+ 'proName': '\xe8\xbe\xbd\xe5\xae\x81'}
+2018-05-21 17:10:17,730 - DEBUG - Scraped from <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+6
+2018-05-21 17:10:17,732 - INFO - item data: {'areaId': '429',
+ 'areaName': '\xe8\x91\xab\xe8\x8a\xa6\xe5\xb2\x9b\xe5\xb8\x82',
+ 'hallId': '429007',
+ 'hallName': '\xe8\xbe\xbd\xe5\xae\x81\xe7\x9c\x81\xe8\x91\xab\xe8\x8a\xa6\xe5\xb2\x9b\xe5\xb8\x82\xe5\x85\xb4\xe5\xb7\xa5\xe8\xa1\x97',
+ 'proId': '6',
+ 'proName': '\xe8\xbe\xbd\xe5\xae\x81'}
+2018-05-21 17:10:17,732 - DEBUG - Scraped from <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+6
+2018-05-21 17:10:17,733 - INFO - item data: {'areaId': '429',
+ 'areaName': '\xe8\x91\xab\xe8\x8a\xa6\xe5\xb2\x9b\xe5\xb8\x82',
+ 'hallId': '429001',
+ 'hallName': '\xe8\xbe\xbd\xe5\xae\x81\xe7\x9c\x81\xe8\x91\xab\xe8\x8a\xa6\xe5\xb2\x9b\xe5\xb8\x82\xe8\x8d\x9f\xe8\x90\x83\xe5\x9b\xad\xe5\xb0\x8f\xe5\x8c\xba',
+ 'proId': '6',
+ 'proName': '\xe8\xbe\xbd\xe5\xae\x81'}
+2018-05-21 17:10:17,733 - DEBUG - Scraped from <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+6
+2018-05-21 17:10:17,733 - INFO - item data: {'areaId': '429',
+ 'areaName': '\xe8\x91\xab\xe8\x8a\xa6\xe5\xb2\x9b\xe5\xb8\x82',
+ 'hallId': '429006',
+ 'hallName': '\xe8\xbe\xbd\xe5\xae\x81\xe7\x9c\x81\xe8\x91\xab\xe8\x8a\xa6\xe5\xb2\x9b\xe5\xb8\x82\xe8\x83\x9c\xe5\x88\xa9\xe8\xb7\xaf',
+ 'proId': '6',
+ 'proName': '\xe8\xbe\xbd\xe5\xae\x81'}
+2018-05-21 17:10:17,734 - DEBUG - Scraped from <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+6
+2018-05-21 17:10:17,734 - INFO - item data: {'areaId': '429',
+ 'areaName': '\xe8\x91\xab\xe8\x8a\xa6\xe5\xb2\x9b\xe5\xb8\x82',
+ 'hallId': '429003',
+ 'hallName': '\xe8\xbe\xbd\xe5\xae\x81\xe7\x9c\x81\xe8\x91\xab\xe8\x8a\xa6\xe5\xb2\x9b\xe5\xb8\x82\xe7\xbb\xa5\xe4\xb8\xad\xe5\x8e\xbf\xe6\x96\xb0\xe5\x85\xb4\xe8\xa1\x97',
+ 'proId': '6',
+ 'proName': '\xe8\xbe\xbd\xe5\xae\x81'}
+2018-05-21 17:10:17,736 - DEBUG - Scraped from <200 http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action>
+6
+2018-05-21 17:10:17,737 - INFO - Closing spider (finished)
+2018-05-21 17:10:17,740 - INFO - Dumping Scrapy stats:
+{'downloader/request_bytes': 40022,
+ 'downloader/request_count': 45,
+ 'downloader/request_method_count/GET': 17,
+ 'downloader/request_method_count/POST': 28,
+ 'downloader/response_bytes': 742095,
+ 'downloader/response_count': 45,
+ 'downloader/response_status_count/200': 30,
+ 'downloader/response_status_count/302': 15,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 5, 21, 9, 10, 17, 739000),
+ 'item_scraped_count': 96,
+ 'log_count/DEBUG': 213,
+ 'log_count/INFO': 203,
+ 'request_depth_max': 7,
+ 'response_received_count': 29,
+ 'scheduler/dequeued': 45,
+ 'scheduler/dequeued/memory': 45,
+ 'scheduler/enqueued': 45,
+ 'scheduler/enqueued/memory': 45,
+ 'start_time': datetime.datetime(2018, 5, 21, 9, 7, 9, 883000)}
+2018-05-21 17:10:17,740 - INFO - Spider closed (finished)
