@@ -33,9 +33,9 @@ class TerminalSpider(scrapy.Spider):
         self.parameter_id = ('proId', 'areaId', 'hallId')
         self.form_data_login = {
             'referer': 'index.php',
-            'login': 'jinf',
-            'cookietime': '25920000',
-            'password': 'jinf',
+            'login': 'xxx',
+            'cookietime': '2592000',
+            'password': 'xxx',
             'submit': '马上登陆',
         }
 
