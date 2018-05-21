@@ -38,7 +38,7 @@ if __name__ == "__main__":
     logging.info("开始时间 %s" % (datetime.datetime.now()))
     pool = multiprocessing.Pool(processes=50)
 
-    for i in xrange(2000):
+    for i in xrange(6000):
         cmd = 'scrapy crawl zfzx -a day_number=%d --nolog' % (i)
         pool.apply_async(exec_crawl, (cmd,))
 

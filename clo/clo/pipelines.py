@@ -41,6 +41,7 @@ class CloPipelineJson(object):
         self.f.close()
 '''
 
+
 # 将item保存到mongoDB
 class CloPipeline(object):
     def __init__(self):
@@ -55,3 +56,18 @@ class CloPipeline(object):
 
     def close_spider(self, spider):
         pass
+
+
+'''
+class CloPipeline(object):
+    def __init__(self):
+        self.f = open('zfzx.json', 'w')
+
+    def process_item(self, item, spider):
+        content = json.dumps(dict(item), ensure_ascii=False) + ',\n'
+        self.f.write(content)
+        return item
+
+    def close_spider(self, spider):
+        self.f.close()
+'''

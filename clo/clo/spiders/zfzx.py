@@ -3,7 +3,7 @@ import scrapy
 import sys
 import datetime
 from decimal import Decimal
-from clo.items import CloItem
+from ..items import CloItem
 from scrapy.http import FormRequest, Request
 
 
