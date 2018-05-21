@@ -23,6 +23,9 @@ class TerminalSpider(scrapy.Spider):
 
     def __init__(self, *args, **kwargs):
         super(TerminalSpider, self).__init__(*args, **kwargs)
+        self.url_start = 'http://xxx/test.html'
+        self.url_data = 'http://xxx/infoplatform/hall/loadPrePareProData.action'
+
         self.counter = {}
         self.giveup = []
         self.hall_infos = copy.deepcopy(hall_infos)
@@ -37,7 +40,7 @@ class TerminalSpider(scrapy.Spider):
         }
 
     def start_requests(self):
-        return [Request(url="http://114.242.119.194:9714/test.html", callback=self.post_login)]
+        return [Request(url=self.url_start, callback=self.post_login)]
 
     def post_login(self, response):
         return [FormRequest.from_response(
@@ -51,7 +54,7 @@ class TerminalSpider(scrapy.Spider):
         for hall_info in self.hall_infos:
             post_data = dict(zip(self.parameter_id, hall_info))
             yield FormRequest(
-                url='http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action',
+                url=self.url_data,
                 formdata=post_data,
                 callback=self.parse,
                 meta=post_data,
@@ -75,7 +78,7 @@ class TerminalSpider(scrapy.Spider):
                 logging.info('{} repeat times: {}'.format(post_data_hallId, self.counter[post_data_hallId]))
                 time.sleep(5)
                 yield FormRequest(
-                    url='http://114.242.119.194:9714/infoplatform/hall/loadPrePareProData.action',
+                    url=self.url_data,
                     formdata=post_data,
                     callback=self.parse,
                     meta=post_data,
